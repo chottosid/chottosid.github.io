@@ -59,27 +59,16 @@ export default function Home() {
             Swarup Sidhartho Mondol
           </h1>
           <p className="text-xl md:text-2xl text-academic-text-light mb-8 animate-fade-in-up">
-            Full-Stack Developer | Machine Learning Engineer | Blockchain Engineer
+            Bioinformatics | Machine Learning | Full-Stack Developer |
+            Blockchain Engineer
           </p>
           <p className="text-academic-text-light max-w-3xl mx-auto mb-8 animate-fade-in-up">
-            Final Year Computer Science student @BUET with a passion for mathematics, theoretical CS, and music.
-            Experienced in full-stack development, ML/DL, Blockchain technologies and
-            automation solutions.
+            Final year Computer Science and Engineering student @BUET with a passion for
+            bioinformatics, theoretical CS, and mathematics. Experienced in
+            full-stack development, ML/DL, blockchain technologies, and
+            computational biology.
           </p>
-          <div className="flex flex-col sm:flex-row justify-center gap-4 animate-fade-in-up">
-            <a
-              href="#research"
-              className="inline-flex items-center gap-2 bg-academic-primary text-white px-6 py-3 rounded-lg font-medium transition-all hover:bg-academic-secondary hover:-translate-y-0.5"
-            >
-              View Projects
-            </a>
-            <a
-              href="#publications"
-              className="inline-flex items-center gap-2 bg-transparent text-academic-primary border border-academic-primary px-6 py-3 rounded-lg font-medium transition-all hover:bg-academic-primary hover:text-white"
-            >
-              Achievements
-            </a>
-          </div>
+          <div className="flex flex-col sm:flex-row justify-center gap-4 animate-fade-in-up"></div>
         </div>
       </section>
 
@@ -95,15 +84,17 @@ export default function Home() {
                 Background
               </h3>
               <p className="text-academic-text-light mb-4">
-                I am a Senior year Computer Science student with a strong
-                foundation in software development, machine learning technologies and Blockchain.
+                I am a Computer Science and Engineering student at BUET with a
+                strong foundation in bioinformatics, machine learning, and
+                blockchain technologies. Passionate about exploring the
+                intersection of computational biology and AI.
               </p>
               <p className="text-academic-text-light">
-                My journey includes building comprehensive web applications like
-                student management systems, job portals, and exploring ML
-                projects. I enjoy creating solutions that combine solid
-                engineering principles with user-friendly interfaces and
-                efficient backend systems.
+                My journey focuses on applying computational and statistical
+                approaches to biological data, building efficient algorithms,
+                and developing intelligent systems that connect science and
+                technology. I enjoy creating solutions that combine solid
+                engineering principles with innovative research approaches.
               </p>
             </div>
             <div>
@@ -111,13 +102,13 @@ export default function Home() {
                 Areas of Interest
               </h3>
               <div className="mb-6">
-                <span className="skill-tag">Full-Stack Development</span>
-                <span className="skill-tag">Web Applications</span>
-                <span className="skill-tag">Database Systems</span>
+                <span className="skill-tag">Bioinformatics</span>
                 <span className="skill-tag">Machine Learning</span>
-                <span className="skill-tag">Software Engineering</span>
-                <span className="skill-tag">System Design</span>
-                <span className="skill-tag">Problem Solving</span>
+                <span className="skill-tag">Full-Stack Development</span>
+                <span className="skill-tag">Blockchain Development</span>
+                <span className="skill-tag">Database Systems</span>
+                <span className="skill-tag">Theoretical CS</span>
+                <span className="skill-tag">Computational Biology</span>
               </div>
               <h3 className="text-xl font-semibold mb-4 text-academic-text">
                 Technical Skills
@@ -126,9 +117,12 @@ export default function Home() {
                 <h4 className="text-sm font-medium text-academic-text mb-2">
                   Programming Languages:
                 </h4>
-                <span className="skill-tag">Java</span>
-                <span className="skill-tag">JavaScript</span>
+                <span className="skill-tag">C++</span>
                 <span className="skill-tag">Python</span>
+                <span className="skill-tag">JavaScript</span>
+                <span className="skill-tag">TypeScript</span>
+                <span className="skill-tag">Java</span>
+                <span className="skill-tag">C</span>
                 <span className="skill-tag">HTML/CSS</span>
                 <span className="skill-tag">SQL</span>
               </div>
@@ -136,21 +130,28 @@ export default function Home() {
                 <h4 className="text-sm font-medium text-academic-text mb-2">
                   Frameworks & Libraries:
                 </h4>
+                <span className="skill-tag">Django</span>
                 <span className="skill-tag">Spring Boot</span>
                 <span className="skill-tag">React</span>
+                <span className="skill-tag">Next.js</span>
                 <span className="skill-tag">Node.js</span>
                 <span className="skill-tag">Express.js</span>
-                <span className="skill-tag">Bootstrap</span>
+                <span className="skill-tag">PyTorch</span>
+                <span className="skill-tag">Scikit-learn</span>
               </div>
               <div>
                 <h4 className="text-sm font-medium text-academic-text mb-2">
                   Databases & Tools:
                 </h4>
                 <span className="skill-tag">MySQL</span>
+                <span className="skill-tag">PostgreSQL</span>
                 <span className="skill-tag">MongoDB</span>
+                <span className="skill-tag">Oracle</span>
                 <span className="skill-tag">Git</span>
-                <span className="skill-tag">REST APIs</span>
-                <span className="skill-tag">Postman</span>
+                <span className="skill-tag">Ethereum</span>
+                <span className="skill-tag">Hardhat</span>
+                <span className="skill-tag">Selenium</span>
+                <span className="skill-tag">Scrapy</span>
               </div>
             </div>
           </div>
@@ -166,71 +167,78 @@ export default function Home() {
           <div className="grid md:grid-cols-2 gap-8">
             <div className="bg-white border border-cream-200 rounded-xl p-8 card-hover shadow-sm">
               <h3 className="text-xl font-semibold mb-3 text-academic-text">
-                Student Result Management System
+                ChinhoAI - Sign Language Avatar
               </h3>
               <p className="text-academic-text-light mb-6">
-                A comprehensive web-based application for managing student
-                academic records and results. Features include student
-                registration, grade management, report generation, and
-                administrative controls with secure authentication and
-                role-based access.
+                An innovative prototype featuring an animated sign language
+                avatar that displays ASL videos synchronized with content
+                playback. Built with Next.js 15, TypeScript, and Framer Motion
+                for smooth animations. Features interactive video upload,
+                multiple gesture patterns, and fullscreen-aware positioning.
               </p>
               <div className="flex flex-wrap gap-2">
-                <span className="skill-tag">Java</span>
-                <span className="skill-tag">Spring Boot</span>
-                <span className="skill-tag">MySQL</span>
-                <span className="skill-tag">Web Development</span>
+                <span className="skill-tag">Next.js</span>
+                <span className="skill-tag">TypeScript</span>
+                <span className="skill-tag">Framer Motion</span>
+                <span className="skill-tag">Tailwind CSS</span>
               </div>
             </div>
             <div className="bg-white border border-cream-200 rounded-xl p-8 card-hover shadow-sm">
               <h3 className="text-xl font-semibold mb-3 text-academic-text">
-                Job Portal Application
+                Kothin-Trains Database System
               </h3>
               <p className="text-academic-text-light mb-6">
-                A full-stack job portal platform connecting job seekers with
-                employers. Features include job posting, application management,
-                candidate profiles, search functionality, and real-time
-                notifications with a responsive user interface.
+                CSE216 Database Sessional Project - A comprehensive train
+                management system built with Python Django framework and Oracle
+                21c DBMS. Features HTML, CSS, JS frontend with Ajax for dynamic
+                interactions. Includes train scheduling, booking management, and
+                user authentication systems.
               </p>
               <div className="flex flex-wrap gap-2">
-                <span className="skill-tag">React</span>
-                <span className="skill-tag">Node.js</span>
-                <span className="skill-tag">MongoDB</span>
-                <span className="skill-tag">Express.js</span>
+                <span className="skill-tag">Django</span>
+                <span className="skill-tag">Python</span>
+                <span className="skill-tag">Oracle 21c</span>
+                <span className="skill-tag">JavaScript</span>
+                <span className="skill-tag">Ajax</span>
               </div>
             </div>
             <div className="bg-white border border-cream-200 rounded-xl p-8 card-hover shadow-sm">
               <h3 className="text-xl font-semibold mb-3 text-academic-text">
-                Machine Learning Projects
+                Woodland Escapade Game
               </h3>
               <p className="text-academic-text-light mb-6">
-                Collection of machine learning projects exploring various
-                algorithms and applications. Includes data preprocessing, model
-                training, evaluation, and visualization components covering
-                supervised and unsupervised learning techniques.
+                A FPS game written completely in C using IGraphics library, a
+                minimalistic wrapper over OpenGL. Features immersive gameplay
+                mechanics, custom graphics rendering, character movement, and
+                interactive game environments. Academic project showcasing
+                graphics programming and game development skills.
+              </p>
+              <div className="flex flex-wrap gap-2">
+                <span className="skill-tag">C</span>
+                <span className="skill-tag">C++</span>
+                <span className="skill-tag">OpenGL</span>
+                <span className="skill-tag">IGraphics</span>
+                <span className="skill-tag">Game Development</span>
+              </div>
+            </div>
+            <div className="bg-white border border-cream-200 rounded-xl p-8 card-hover shadow-sm">
+              <h3 className="text-xl font-semibold mb-3 text-academic-text">
+                Machine Learning & Bioinformatics Projects
+              </h3>
+              <p className="text-academic-text-light mb-6">
+                Collection of bioinformatics and machine learning projects
+                exploring computational biology, deep learning for biological
+                data analysis, and theoretical computer science applications.
+                Includes data preprocessing, model training, evaluation, and
+                visualization components with focus on biological data
+                interpretation.
               </p>
               <div className="flex flex-wrap gap-2">
                 <span className="skill-tag">Python</span>
+                <span className="skill-tag">PyTorch</span>
                 <span className="skill-tag">Scikit-learn</span>
+                <span className="skill-tag">Bioinformatics</span>
                 <span className="skill-tag">Data Analysis</span>
-                <span className="skill-tag">Machine Learning</span>
-              </div>
-            </div>
-            <div className="bg-white border border-cream-200 rounded-xl p-8 card-hover shadow-sm">
-              <h3 className="text-xl font-semibold mb-3 text-academic-text">
-                Web Development Projects
-              </h3>
-              <p className="text-academic-text-light mb-6">
-                Various web applications demonstrating modern development
-                practices, responsive design, and clean code architecture.
-                Projects showcase proficiency in both frontend and backend
-                technologies with focus on user experience and performance.
-              </p>
-              <div className="flex flex-wrap gap-2">
-                <span className="skill-tag">JavaScript</span>
-                <span className="skill-tag">HTML/CSS</span>
-                <span className="skill-tag">Bootstrap</span>
-                <span className="skill-tag">REST APIs</span>
               </div>
             </div>
           </div>
@@ -246,39 +254,59 @@ export default function Home() {
           <div className="space-y-8 mb-12">
             <div className="bg-cream-50 border-l-4 border-academic-primary p-6 rounded-r-lg shadow-sm">
               <h3 className="text-lg font-semibold mb-2 text-academic-text">
-                Master of Computer Applications (MCA)
+                Bachelor of Science in Computer Science and Engineering
               </h3>
               <p className="text-academic-text-light mb-1">
-                <strong>KIIT University</strong> | Currently Pursuing
+                <strong>
+                  Bangladesh University of Engineering and Technology (BUET)
+                </strong>{" "}
+                | Expected Graduation: 2026
               </p>
               <p className="text-academic-primary font-medium">
-                Specialization in Artificial Intelligence and Machine Learning
+                Focus on Bioinformatics, Machine Learning, and Theoretical
+                Computer Science
               </p>
             </div>
 
             <div className="bg-cream-50 border-l-4 border-academic-primary p-6 rounded-r-lg shadow-sm">
               <h3 className="text-lg font-semibold mb-2 text-academic-text">
-                Technical Research Projects
+                Research Interests & Projects
               </h3>
               <p className="text-academic-text-light mb-1">
-                <strong>Multiple AI/ML Projects</strong> | GitHub Portfolio
+                <strong>Bioinformatics & Computational Biology</strong> | Active
+                Research
               </p>
               <p className="text-academic-primary font-medium">
-                Computer Vision, NLP, and Deep Learning implementations with
-                real-world applications
+                Exploring intersection of bioinformatics, machine learning, and
+                theoretical CS. Focus on computational approaches to biological
+                data and algorithm development.
               </p>
             </div>
 
             <div className="bg-cream-50 border-l-4 border-academic-primary p-6 rounded-r-lg shadow-sm">
               <h3 className="text-lg font-semibold mb-2 text-academic-text">
-                Professional Development
+                Current Focus Areas
               </h3>
               <p className="text-academic-text-light mb-1">
-                <strong>Continuous Learning</strong> | Industry-Relevant Skills
+                <strong>Multi-disciplinary Research</strong> | 2024-2025
               </p>
               <p className="text-academic-primary font-medium">
-                Advanced certifications and hands-on experience in cutting-edge
-                AI technologies
+                Bioinformatics algorithms, Deep learning for computational
+                biology, Blockchain and Web3 applications, Data visualization
+                and analytics
+              </p>
+            </div>
+
+            <div className="bg-cream-50 border-l-4 border-academic-primary p-6 rounded-r-lg shadow-sm">
+              <h3 className="text-lg font-semibold mb-2 text-academic-text">
+                Technical Excellence
+              </h3>
+              <p className="text-academic-text-light mb-1">
+                <strong>Academic Projects</strong> | CSE Coursework
+              </p>
+              <p className="text-academic-primary font-medium">
+                Strong performance in database systems (CSE216), data structures
+                (CSE204), algorithms (CSE208), and advanced programming projects
               </p>
             </div>
           </div>
@@ -305,47 +333,50 @@ export default function Home() {
           <div className="space-y-8">
             <div className="bg-white border border-cream-200 rounded-xl p-8 card-hover shadow-sm">
               <h3 className="text-xl font-semibold text-academic-text">
-                Computer Science Student
+                CSE Student at BUET
               </h3>
               <p className="text-academic-primary font-medium mb-3">
-                Academic Journey | Present
+                Bangladesh University of Engineering and Technology | 2022 -
+                Present
               </p>
               <p className="text-academic-text-light">
-                Currently pursuing Computer Science studies with focus on
-                software development, web technologies, and emerging fields like
-                machine learning. Actively working on practical projects to
-                apply theoretical knowledge and build real-world solutions.
+                Pursuing Computer Science and Engineering with focus on
+                bioinformatics, machine learning, and theoretical computer
+                science. Actively engaged in research projects exploring
+                computational biology and algorithm development. Expected
+                graduation: 2026.
               </p>
             </div>
 
             <div className="bg-white border border-cream-200 rounded-xl p-8 card-hover shadow-sm">
               <h3 className="text-xl font-semibold text-academic-text">
-                Full-Stack Development Projects
+                Research & Development Projects
               </h3>
               <p className="text-academic-primary font-medium mb-3">
-                Personal Projects | 2023 - Present
+                Academic & Personal Projects | 2023 - Present
               </p>
               <p className="text-academic-text-light">
-                Developed comprehensive web applications including student
-                management systems and job portals. Gained hands-on experience
-                with Java Spring Boot, React, Node.js, and database management.
-                Focus on creating user-friendly interfaces and efficient backend
-                systems.
+                Developed innovative applications including ChinhoAI sign
+                language avatar, database management systems, and game
+                development projects. Gained expertise in Django, Next.js,
+                TypeScript, Oracle databases, and OpenGL graphics programming.
+                Focus on creating accessible technology solutions.
               </p>
             </div>
 
             <div className="bg-white border border-cream-200 rounded-xl p-8 card-hover shadow-sm">
               <h3 className="text-xl font-semibold text-academic-text">
-                Machine Learning Exploration
+                Bioinformatics & ML Research
               </h3>
               <p className="text-academic-primary font-medium mb-3">
-                Learning & Implementation | 2024
+                Research Focus | 2024 - Present
               </p>
               <p className="text-academic-text-light">
-                Exploring machine learning concepts through practical projects
-                and implementations. Working with Python libraries for data
-                analysis and building foundational understanding of ML
-                algorithms and their applications in real-world scenarios.
+                Exploring bioinformatics algorithms and deep learning for
+                computational biology. Working with PyTorch, scikit-learn, and
+                specialized bioinformatics tools. Developing intelligent systems
+                that connect biological data analysis with machine learning
+                applications and theoretical computer science principles.
               </p>
             </div>
           </div>
@@ -360,28 +391,30 @@ export default function Home() {
           </h2>
           <div className="text-center">
             <p className="text-academic-text-light mb-8 max-w-2xl mx-auto">
-              I'm always excited to discuss AI/ML projects, collaborate on
-              innovative solutions, or explore new opportunities in artificial
-              intelligence and software development. Let's connect and build
-              something amazing together!
+              I'm always excited to discuss bioinformatics research, collaborate
+              on ML/AI projects, or explore new opportunities in computational
+              biology and blockchain development. Let's connect and build
+              innovative solutions together!
             </p>
             <div className="flex flex-col sm:flex-row justify-center gap-4 mb-8">
               <a
-                href="mailto:swarup.chakraborty@example.com"
+                href="mailto:swarupsidhartho@gmail.com"
                 className="inline-flex items-center gap-2 bg-academic-primary text-white px-6 py-3 rounded-lg font-medium transition-all hover:bg-academic-secondary hover:-translate-y-0.5"
               >
                 📧 Email Me
               </a>
               <a
-                href="/resume"
+                href="https://github.com/chottosid"
+                target="_blank"
+                rel="noopener noreferrer"
                 className="inline-flex items-center gap-2 bg-transparent text-academic-primary border border-academic-primary px-6 py-3 rounded-lg font-medium transition-all hover:bg-academic-primary hover:text-white"
               >
-                📄 Download CV
+                📄 View Portfolio
               </a>
             </div>
             <div className="flex justify-center gap-6">
               <a
-                href="https://linkedin.com/in/swarup-chakraborty"
+                href="https://www.linkedin.com/in/swarup-sidhartho-mondol-032b90257/"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="text-academic-text-light font-medium hover:text-academic-primary transition-colors"
@@ -397,15 +430,15 @@ export default function Home() {
                 GitHub
               </a>
               <a
-                href="https://scholar.google.com"
+                href="https://www.facebook.com/fatmathman"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="text-academic-text-light font-medium hover:text-academic-primary transition-colors"
               >
-                Google Scholar
+                Facebook
               </a>
               <a
-                href="mailto:swarup.chakraborty@example.com"
+                href="mailto:swarupsidhartho@gmail.com"
                 className="text-academic-text-light font-medium hover:text-academic-primary transition-colors"
               >
                 Email
@@ -419,7 +452,7 @@ export default function Home() {
       <footer className="bg-cream-50 border-t border-cream-200 py-12 text-center">
         <div className="max-w-6xl mx-auto px-8">
           <p className="text-academic-text-light">
-            &copy; 2024 Swarup Chakraborty. All rights reserved.
+            &copy; 2024 Swarup Sidhartho Mondol. All rights reserved.
           </p>
           <p className="text-academic-text-light mt-2">
             Built with Next.js and Tailwind CSS, hosted on GitHub Pages

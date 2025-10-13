@@ -1,12 +1,12 @@
 import "./globals.css";
 
 export const metadata = {
-  title: "Swarup Chakraborty - AI/ML Engineer & Researcher",
+  title: "Swarup Sidhartho Mondol - AI/ML Engineer & Researcher",
   description:
-    "AI/ML Engineer specializing in Computer Vision, Deep Learning, and Software Development",
+    "AI/ML Engineer specializing in Computer Vision, Deep Learning, Blockchain, and Software Development",
   keywords:
-    "artificial intelligence, machine learning, computer vision, deep learning, software development, python, tensorflow, pytorch",
-  authors: [{ name: "Swarup Chakraborty" }],
+    "artificial intelligence, machine learning, computer vision, deep learning, software development, python, tensorflow, pytorch, blockchain, solidity, web3",
+  authors: [{ name: "Swarup Sidhartho Mondol" }],
 };
 
 export const viewport = {
