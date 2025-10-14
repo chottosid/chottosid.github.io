@@ -18,7 +18,7 @@ export default function Home() {
             </li>
             <li>
               <a
-                href="#research"
+                href="#projects"
                 className="text-academic-text-light font-medium hover:text-academic-primary transition-colors"
               >
                 Projects
@@ -26,18 +26,26 @@ export default function Home() {
             </li>
             <li>
               <a
-                href="#publications"
+                href="#research"
                 className="text-academic-text-light font-medium hover:text-academic-primary transition-colors"
               >
-                Achievements
+                Research
               </a>
             </li>
             <li>
               <a
-                href="#experience"
+                href="#education"
                 className="text-academic-text-light font-medium hover:text-academic-primary transition-colors"
               >
-                Experience
+                Education
+              </a>
+            </li>
+            <li>
+              <a
+                href="#awards"
+                className="text-academic-text-light font-medium hover:text-academic-primary transition-colors"
+              >
+                Awards
               </a>
             </li>
             <li>
@@ -55,18 +63,16 @@ export default function Home() {
       {/* Hero Section */}
       <section className="pt-32 pb-24 text-center bg-gradient-to-br from-white via-cream-50 to-cream-100">
         <div className="max-w-6xl mx-auto px-8">
+          <div className="text-6xl mb-4 animate-fade-in-up">👋</div>
           <h1 className="text-5xl md:text-6xl font-bold mb-4 hero-gradient-text animate-fade-in-up">
             Swarup Sidhartho Mondol
           </h1>
           <p className="text-xl md:text-2xl text-academic-text-light mb-8 animate-fade-in-up">
-            Bioinformatics | Machine Learning | Full-Stack Developer |
-            Blockchain Engineer
+            CS Student @ BUET | Full-Stack Developer | Blockchain Engineer
           </p>
           <p className="text-academic-text-light max-w-3xl mx-auto mb-8 animate-fade-in-up">
-            Final year Computer Science and Engineering student @BUET with a passion for
-            bioinformatics, theoretical CS, and mathematics. Experienced in
-            full-stack development, ML/DL, blockchain technologies, and
-            computational biology.
+            Building innovative solutions at the intersection of blockchain, web development, 
+            and machine learning. Graduating 2026.
           </p>
           <div className="flex flex-col sm:flex-row justify-center gap-4 animate-fade-in-up"></div>
         </div>
@@ -76,46 +82,40 @@ export default function Home() {
       <section id="about" className="py-16">
         <div className="max-w-6xl mx-auto px-8">
           <h2 className="text-3xl font-semibold text-center mb-12 text-academic-text">
-            About Me
+            👨‍💻 About Me
           </h2>
           <div className="grid md:grid-cols-2 gap-12">
             <div>
               <h3 className="text-xl font-semibold mb-4 text-academic-text">
-                Background
+                About
               </h3>
               <p className="text-academic-text-light mb-4">
-                I am a Computer Science and Engineering student at BUET with a
-                strong foundation in bioinformatics, machine learning, and
-                blockchain technologies. Passionate about exploring the
-                intersection of computational biology and AI.
+                CSE student at BUET with experience building full-stack applications, 
+                blockchain systems, and machine learning projects.
               </p>
               <p className="text-academic-text-light">
-                My journey focuses on applying computational and statistical
-                approaches to biological data, building efficient algorithms,
-                and developing intelligent systems that connect science and
-                technology. I enjoy creating solutions that combine solid
-                engineering principles with innovative research approaches.
+                I enjoy solving complex problems through code—from blockchain-based platforms 
+                to scalable web applications. Always learning, always building.
               </p>
             </div>
             <div>
               <h3 className="text-xl font-semibold mb-4 text-academic-text">
-                Areas of Interest
+                Interests
               </h3>
               <div className="mb-6">
-                <span className="skill-tag">Bioinformatics</span>
-                <span className="skill-tag">Machine Learning</span>
                 <span className="skill-tag">Full-Stack Development</span>
-                <span className="skill-tag">Blockchain Development</span>
+                <span className="skill-tag">Blockchain & Web3</span>
+                <span className="skill-tag">Machine Learning</span>
                 <span className="skill-tag">Database Systems</span>
-                <span className="skill-tag">Theoretical CS</span>
-                <span className="skill-tag">Computational Biology</span>
+                <span className="skill-tag">API Design</span>
+                <span className="skill-tag">DevOps</span>
               </div>
               <h3 className="text-xl font-semibold mb-4 text-academic-text">
-                Technical Skills
+                Skills
               </h3>
-              <div className="mb-6">
+              <div className="mb-4">
                 <h4 className="text-sm font-medium text-academic-text mb-2">
-                  Programming Languages:
+                  Languages:
                 </h4>
                 <span className="skill-tag">C++</span>
                 <span className="skill-tag">Python</span>
@@ -123,35 +123,157 @@ export default function Home() {
                 <span className="skill-tag">TypeScript</span>
                 <span className="skill-tag">Java</span>
                 <span className="skill-tag">C</span>
-                <span className="skill-tag">HTML/CSS</span>
                 <span className="skill-tag">SQL</span>
               </div>
-              <div className="mb-6">
+              <div className="mb-4">
                 <h4 className="text-sm font-medium text-academic-text mb-2">
-                  Frameworks & Libraries:
+                  Technologies:
                 </h4>
-                <span className="skill-tag">Django</span>
-                <span className="skill-tag">Spring Boot</span>
                 <span className="skill-tag">React</span>
                 <span className="skill-tag">Next.js</span>
                 <span className="skill-tag">Node.js</span>
-                <span className="skill-tag">Express.js</span>
-                <span className="skill-tag">PyTorch</span>
-                <span className="skill-tag">Scikit-learn</span>
-              </div>
-              <div>
-                <h4 className="text-sm font-medium text-academic-text mb-2">
-                  Databases & Tools:
-                </h4>
-                <span className="skill-tag">MySQL</span>
+                <span className="skill-tag">Django</span>
+                <span className="skill-tag">Express</span>
                 <span className="skill-tag">PostgreSQL</span>
                 <span className="skill-tag">MongoDB</span>
-                <span className="skill-tag">Oracle</span>
-                <span className="skill-tag">Git</span>
                 <span className="skill-tag">Ethereum</span>
-                <span className="skill-tag">Hardhat</span>
-                <span className="skill-tag">Selenium</span>
-                <span className="skill-tag">Scrapy</span>
+                <span className="skill-tag">Docker</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Projects Section */}
+      <section id="projects" className="py-16 bg-cream-50">
+        <div className="max-w-6xl mx-auto px-8">
+          <h2 className="text-3xl font-semibold text-center mb-12 text-academic-text">
+            🚀 Projects
+          </h2>
+          <div className="grid md:grid-cols-2 gap-6">
+            <div className="bg-white border border-cream-200 rounded-xl p-6 card-hover shadow-sm">
+              <h3 className="text-lg font-semibold mb-2 text-academic-text">
+                🤖 Cognitia | Backend & AI Development
+              </h3>
+              <ul className="list-disc list-inside text-academic-text-light space-y-1 text-sm mb-4">
+                <li>Student-focused study-helper platform for Software Development Sessional course</li>
+                <li>Designed scalable REST APIs using ExpressJS and integrated AI services via Flask and OpenRouter</li>
+                <li>Deployed on Azure Cloud using Docker, NGINX load balancing, and CI/CD with GitHub Actions</li>
+              </ul>
+              <div className="flex flex-wrap gap-1.5">
+                <span className="skill-tag text-xs">Express.js</span>
+                <span className="skill-tag text-xs">Flask</span>
+                <span className="skill-tag text-xs">Docker</span>
+                <span className="skill-tag text-xs">Azure</span>
+                <span className="skill-tag text-xs">NGINX</span>
+              </div>
+            </div>
+
+            <div className="bg-white border border-cream-200 rounded-xl p-6 card-hover shadow-sm">
+              <h3 className="text-lg font-semibold mb-2 text-academic-text">
+                ⚖️ Veritas | Backend & Blockchain Development
+                <span className="text-xs text-academic-primary ml-2">(Selected for International Blockchain Olympiad 2025)</span>
+              </h3>
+              <ul className="list-disc list-inside text-academic-text-light space-y-1 text-sm mb-4">
+                <li>Blockchain and AI-powered digital justice platform improving transparency in judicial workflows</li>
+                <li>Built backend with ExpressJS, IPFS, and MongoDB</li>
+                <li>Developed Web3 backend and smart contracts using Hardhat and Solidity</li>
+                <li>Deployed on Azure Cloud with Docker and automated CI/CD pipelines</li>
+              </ul>
+              <div className="flex flex-wrap gap-1.5">
+                <span className="skill-tag text-xs">Express.js</span>
+                <span className="skill-tag text-xs">MongoDB</span>
+                <span className="skill-tag text-xs">Solidity</span>
+                <span className="skill-tag text-xs">Hardhat</span>
+                <span className="skill-tag text-xs">IPFS</span>
+              </div>
+            </div>
+
+            <div className="bg-white border border-cream-200 rounded-xl p-6 card-hover shadow-sm">
+              <h3 className="text-lg font-semibold mb-2 text-academic-text">
+                🧓 Shohochori | Frontend & Microservice Backend
+              </h3>
+              <ul className="list-disc list-inside text-academic-text-light space-y-1 text-sm mb-4">
+                <li>Social and wellness platform designed for elderly users</li>
+                <li>Built accessible frontend with React, emphasizing senior-friendly navigation and readability</li>
+                <li>Implemented microservice backend using Spring Boot, MySQL, RabbitMQ, and Redis</li>
+              </ul>
+              <div className="flex flex-wrap gap-1.5">
+                <span className="skill-tag text-xs">React</span>
+                <span className="skill-tag text-xs">Spring Boot</span>
+                <span className="skill-tag text-xs">MySQL</span>
+                <span className="skill-tag text-xs">RabbitMQ</span>
+                <span className="skill-tag text-xs">Redis</span>
+              </div>
+            </div>
+
+            <div className="bg-white border border-cream-200 rounded-xl p-6 card-hover shadow-sm">
+              <h3 className="text-lg font-semibold mb-2 text-academic-text">
+                🚂 Kothin-Trains | Full Stack Development
+              </h3>
+              <ul className="list-disc list-inside text-academic-text-light space-y-1 text-sm mb-4">
+                <li>Train ticketing platform modeled after Shohoz services</li>
+                <li>Developed backend with Django</li>
+                <li>Designed frontend for booking, scheduling, and user management using Jinja</li>
+                <li>Wrote all SQL queries manually as per project requirements (no ORM used)</li>
+              </ul>
+              <div className="flex flex-wrap gap-1.5">
+                <span className="skill-tag text-xs">Django</span>
+                <span className="skill-tag text-xs">Python</span>
+                <span className="skill-tag text-xs">Jinja</span>
+                <span className="skill-tag text-xs">SQL</span>
+              </div>
+            </div>
+
+            <div className="bg-white border border-cream-200 rounded-xl p-6 card-hover shadow-sm">
+              <h3 className="text-lg font-semibold mb-2 text-academic-text">
+                � ChinhoAI | Full Stack Development
+              </h3>
+              <ul className="list-disc list-inside text-academic-text-light space-y-1 text-sm mb-4">
+                <li>AI-powered sign language interpreter featuring real ASL video demonstrations</li>
+                <li>Built interactive video player with fullscreen support and playback controls using React</li>
+                <li>Implemented smooth animations and transitions using Framer Motion</li>
+                <li>Designed responsive UI with drag-and-drop video upload functionality</li>
+              </ul>
+              <div className="flex flex-wrap gap-1.5">
+                <span className="skill-tag text-xs">Next.js</span>
+                <span className="skill-tag text-xs">React</span>
+                <span className="skill-tag text-xs">Framer Motion</span>
+                <span className="skill-tag text-xs">Tailwind CSS</span>
+              </div>
+            </div>
+
+            <div className="bg-white border border-cream-200 rounded-xl p-6 card-hover shadow-sm">
+              <h3 className="text-lg font-semibold mb-2 text-academic-text">
+                💎 Sticky Studio | Full Stack & AI Development
+              </h3>
+              <ul className="list-disc list-inside text-academic-text-light space-y-1 text-sm mb-4">
+                <li>Built opportunity management platform for tracking scholarships, PhD positions, and competitions</li>
+                <li>Integrated Gemini AI for automated extraction of opportunity details from documents and images</li>
+                <li>Designed PostgreSQL database schema with advanced indexing for search optimization</li>
+                <li>Implemented authentication system and responsive UI with modern design patterns</li>
+              </ul>
+              <div className="flex flex-wrap gap-1.5">
+                <span className="skill-tag text-xs">Next.js</span>
+                <span className="skill-tag text-xs">PostgreSQL</span>
+                <span className="skill-tag text-xs">Gemini AI</span>
+                <span className="skill-tag text-xs">Genkit</span>
+              </div>
+            </div>
+
+            <div className="bg-white border border-cream-200 rounded-xl p-6 card-hover shadow-sm">
+              <h3 className="text-lg font-semibold mb-2 text-academic-text">
+                �📹 IEEE Video and ImagProcessing Cup 2025 | Dataset Preprocessing
+              </h3>
+              <ul className="list-disc list-inside text-academic-text-light space-y-1 text-sm mb-4">
+                <li>Collaborated in team project for IEEE VIPCup 2025, focusing on drone vs. bird classification using RGB and IR imagery</li>
+                <li>Designed and implemented advanced dataset preprocessing pipeline for YOLO-based temporal models</li>
+              </ul>
+              <div className="flex flex-wrap gap-1.5">
+                <span className="skill-tag text-xs">Python</span>
+                <span className="skill-tag text-xs">PyTorch</span>
+                <span className="skill-tag text-xs">YOLO</span>
+                <span className="skill-tag text-xs">Computer Vision</span>
               </div>
             </div>
           </div>
@@ -159,242 +281,211 @@ export default function Home() {
       </section>
 
       {/* Research Section */}
-      <section id="research" className="py-16 bg-cream-50">
+      <section id="research" className="py-16">
         <div className="max-w-6xl mx-auto px-8">
           <h2 className="text-3xl font-semibold text-center mb-12 text-academic-text">
-            Featured Projects
+            🔬 Research
           </h2>
-          <div className="grid md:grid-cols-2 gap-8">
-            <div className="bg-white border border-cream-200 rounded-xl p-8 card-hover shadow-sm">
-              <h3 className="text-xl font-semibold mb-3 text-academic-text">
-                ChinhoAI - Sign Language Avatar
-              </h3>
-              <p className="text-academic-text-light mb-6">
-                An innovative prototype featuring an animated sign language
-                avatar that displays ASL videos synchronized with content
-                playback. Built with Next.js 15, TypeScript, and Framer Motion
-                for smooth animations. Features interactive video upload,
-                multiple gesture patterns, and fullscreen-aware positioning.
-              </p>
-              <div className="flex flex-wrap gap-2">
-                <span className="skill-tag">Next.js</span>
-                <span className="skill-tag">TypeScript</span>
-                <span className="skill-tag">Framer Motion</span>
-                <span className="skill-tag">Tailwind CSS</span>
+          <div className="space-y-6">
+            <div className="bg-cream-50 border border-cream-200 rounded-xl p-6 card-hover">
+              <div className="flex justify-between items-start mb-3">
+                <h3 className="text-lg font-semibold text-academic-text">
+                  DDS-E-Sim: A Transformer-based Probabilistic Generative Framework for Simulating Error-Prone DNA Sequences for DNA Data Storage
+                </h3>
+                <span className="text-xs text-academic-primary font-medium whitespace-nowrap ml-4">2025</span>
               </div>
+              <p className="text-sm text-green-700 font-medium mb-2">Accepted at NeurIPS 2025 (FPI and SPIGM Tracks)</p>
+              <p className="text-sm text-academic-text-light mb-3">
+                Collaborators: Prof. A.B.M. Alim Al Islam, BUET
+              </p>
             </div>
-            <div className="bg-white border border-cream-200 rounded-xl p-8 card-hover shadow-sm">
-              <h3 className="text-xl font-semibold mb-3 text-academic-text">
-                Kothin-Trains Database System
-              </h3>
-              <p className="text-academic-text-light mb-6">
-                CSE216 Database Sessional Project - A comprehensive train
-                management system built with Python Django framework and Oracle
-                21c DBMS. Features HTML, CSS, JS frontend with Ajax for dynamic
-                interactions. Includes train scheduling, booking management, and
-                user authentication systems.
-              </p>
-              <div className="flex flex-wrap gap-2">
-                <span className="skill-tag">Django</span>
-                <span className="skill-tag">Python</span>
-                <span className="skill-tag">Oracle 21c</span>
-                <span className="skill-tag">JavaScript</span>
-                <span className="skill-tag">Ajax</span>
+
+            <div className="bg-cream-50 border border-cream-200 rounded-xl p-6 card-hover">
+              <div className="flex justify-between items-start mb-3">
+                <h3 className="text-lg font-semibold text-academic-text">
+                  Machine Learning and Data Imbalance Techniques
+                </h3>
+                <span className="text-xs text-blue-600 font-medium whitespace-nowrap ml-4">In Progress</span>
               </div>
+              <p className="text-sm text-academic-text-light mb-3">
+                Collaborators: Prof. Sukarna Barua, BUET
+              </p>
             </div>
-            <div className="bg-white border border-cream-200 rounded-xl p-8 card-hover shadow-sm">
-              <h3 className="text-xl font-semibold mb-3 text-academic-text">
-                Woodland Escapade Game
-              </h3>
-              <p className="text-academic-text-light mb-6">
-                A FPS game written completely in C using IGraphics library, a
-                minimalistic wrapper over OpenGL. Features immersive gameplay
-                mechanics, custom graphics rendering, character movement, and
-                interactive game environments. Academic project showcasing
-                graphics programming and game development skills.
-              </p>
-              <div className="flex flex-wrap gap-2">
-                <span className="skill-tag">C</span>
-                <span className="skill-tag">C++</span>
-                <span className="skill-tag">OpenGL</span>
-                <span className="skill-tag">IGraphics</span>
-                <span className="skill-tag">Game Development</span>
+
+            <div className="bg-cream-50 border border-cream-200 rounded-xl p-6 card-hover">
+              <div className="flex justify-between items-start mb-3">
+                <h3 className="text-lg font-semibold text-academic-text">
+                  Quantum Computing and Quantum Machine Learning
+                </h3>
+                <span className="text-xs text-blue-600 font-medium whitespace-nowrap ml-4">In Progress</span>
               </div>
-            </div>
-            <div className="bg-white border border-cream-200 rounded-xl p-8 card-hover shadow-sm">
-              <h3 className="text-xl font-semibold mb-3 text-academic-text">
-                Machine Learning & Bioinformatics Projects
-              </h3>
-              <p className="text-academic-text-light mb-6">
-                Collection of bioinformatics and machine learning projects
-                exploring computational biology, deep learning for biological
-                data analysis, and theoretical computer science applications.
-                Includes data preprocessing, model training, evaluation, and
-                visualization components with focus on biological data
-                interpretation.
+              <p className="text-sm text-academic-text-light mb-3">
+                Collaborators: Prof. Sohel Rahman, BUET
               </p>
-              <div className="flex flex-wrap gap-2">
-                <span className="skill-tag">Python</span>
-                <span className="skill-tag">PyTorch</span>
-                <span className="skill-tag">Scikit-learn</span>
-                <span className="skill-tag">Bioinformatics</span>
-                <span className="skill-tag">Data Analysis</span>
-              </div>
             </div>
           </div>
         </div>
       </section>
 
-      {/* Publications Section */}
-      <section id="publications" className="py-16">
+      {/* Education Section */}
+      <section id="education" className="py-16 bg-cream-50">
         <div className="max-w-6xl mx-auto px-8">
           <h2 className="text-3xl font-semibold text-center mb-12 text-academic-text">
-            Academic Achievements & Recognition
+            🎓 Education
           </h2>
-          <div className="space-y-8 mb-12">
-            <div className="bg-cream-50 border-l-4 border-academic-primary p-6 rounded-r-lg shadow-sm">
-              <h3 className="text-lg font-semibold mb-2 text-academic-text">
-                Bachelor of Science in Computer Science and Engineering
-              </h3>
-              <p className="text-academic-text-light mb-1">
-                <strong>
+          <div className="space-y-6">
+            <div className="bg-white border-l-4 border-academic-primary p-6 rounded-r-lg shadow-sm">
+              <div className="flex justify-between items-start flex-wrap gap-2 mb-2">
+                <h3 className="text-lg font-semibold text-academic-text">
                   Bangladesh University of Engineering and Technology (BUET)
-                </strong>{" "}
-                | Expected Graduation: 2026
+                </h3>
+                <span className="text-academic-text-light">Jan 2022 - Jan 2026</span>
+              </div>
+              <p className="text-academic-primary font-medium mb-2">
+                Bachelor of Science in Computer Science and Engineering
               </p>
-              <p className="text-academic-primary font-medium">
-                Focus on Bioinformatics, Machine Learning, and Theoretical
-                Computer Science
-              </p>
-            </div>
-
-            <div className="bg-cream-50 border-l-4 border-academic-primary p-6 rounded-r-lg shadow-sm">
-              <h3 className="text-lg font-semibold mb-2 text-academic-text">
-                Research Interests & Projects
-              </h3>
-              <p className="text-academic-text-light mb-1">
-                <strong>Bioinformatics & Computational Biology</strong> | Active
-                Research
-              </p>
-              <p className="text-academic-primary font-medium">
-                Exploring intersection of bioinformatics, machine learning, and
-                theoretical CS. Focus on computational approaches to biological
-                data and algorithm development.
+              <p className="text-academic-text-light text-sm">
+                CGPA: 3.56 (up to Level 3, Term 2)
               </p>
             </div>
-
-            <div className="bg-cream-50 border-l-4 border-academic-primary p-6 rounded-r-lg shadow-sm">
-              <h3 className="text-lg font-semibold mb-2 text-academic-text">
-                Current Focus Areas
-              </h3>
-              <p className="text-academic-text-light mb-1">
-                <strong>Multi-disciplinary Research</strong> | 2024-2025
-              </p>
-              <p className="text-academic-primary font-medium">
-                Bioinformatics algorithms, Deep learning for computational
-                biology, Blockchain and Web3 applications, Data visualization
-                and analytics
-              </p>
-            </div>
-
-            <div className="bg-cream-50 border-l-4 border-academic-primary p-6 rounded-r-lg shadow-sm">
-              <h3 className="text-lg font-semibold mb-2 text-academic-text">
-                Technical Excellence
-              </h3>
-              <p className="text-academic-text-light mb-1">
-                <strong>Academic Projects</strong> | CSE Coursework
-              </p>
-              <p className="text-academic-primary font-medium">
-                Strong performance in database systems (CSE216), data structures
-                (CSE204), algorithms (CSE208), and advanced programming projects
-              </p>
-            </div>
-          </div>
-
-          <div className="text-center">
-            <a
-              href="https://github.com/chottosid"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="inline-flex items-center gap-2 bg-transparent text-academic-primary border border-academic-primary px-6 py-3 rounded-lg font-medium transition-all hover:bg-academic-primary hover:text-white"
-            >
-              View GitHub Portfolio
-            </a>
           </div>
         </div>
       </section>
 
-      {/* Experience Section */}
-      <section id="experience" className="py-16 bg-cream-50">
+      {/* Awards & Honors Section */}
+      <section id="awards" className="py-16">
         <div className="max-w-6xl mx-auto px-8">
           <h2 className="text-3xl font-semibold text-center mb-12 text-academic-text">
-            Professional Experience
+            🏆 Honors and Awards
           </h2>
-          <div className="space-y-8">
-            <div className="bg-white border border-cream-200 rounded-xl p-8 card-hover shadow-sm">
-              <h3 className="text-xl font-semibold text-academic-text">
-                CSE Student at BUET
-              </h3>
-              <p className="text-academic-primary font-medium mb-3">
-                Bangladesh University of Engineering and Technology | 2022 -
-                Present
-              </p>
-              <p className="text-academic-text-light">
-                Pursuing Computer Science and Engineering with focus on
-                bioinformatics, machine learning, and theoretical computer
-                science. Actively engaged in research projects exploring
-                computational biology and algorithm development. Expected
-                graduation: 2026.
-              </p>
+          <div className="space-y-3 max-w-4xl mx-auto">
+            {/* Top 3 Highlighted Awards */}
+            <div className="bg-gradient-to-r from-yellow-50 to-amber-50 border-l-4 border-yellow-500 p-5 rounded-r-lg shadow-md hover:shadow-lg transition-shadow">
+              <div className="flex justify-between items-start flex-wrap gap-2">
+                <div className="flex items-start gap-3">
+                  <span className="text-2xl"></span>
+                  <div>
+                    <h3 className="text-base font-bold text-gray-900">
+                      Finalist, International Blockchain Olympiad (representing Bangladesh)
+                    </h3>
+                    <p className="text-xs text-gray-600 mt-1">International Recognition</p>
+                  </div>
+                </div>
+                <span className="text-gray-700 font-semibold text-sm whitespace-nowrap">2025</span>
+              </div>
             </div>
 
-            <div className="bg-white border border-cream-200 rounded-xl p-8 card-hover shadow-sm">
-              <h3 className="text-xl font-semibold text-academic-text">
-                Research & Development Projects
-              </h3>
-              <p className="text-academic-primary font-medium mb-3">
-                Academic & Personal Projects | 2023 - Present
-              </p>
-              <p className="text-academic-text-light">
-                Developed innovative applications including ChinhoAI sign
-                language avatar, database management systems, and game
-                development projects. Gained expertise in Django, Next.js,
-                TypeScript, Oracle databases, and OpenGL graphics programming.
-                Focus on creating accessible technology solutions.
-              </p>
+            <div className="bg-gradient-to-r from-blue-50 to-indigo-50 border-l-4 border-blue-500 p-5 rounded-r-lg shadow-md hover:shadow-lg transition-shadow">
+              <div className="flex justify-between items-start flex-wrap gap-2">
+                <div className="flex items-start gap-3">
+                  <span className="text-2xl"></span>
+                  <div>
+                    <h3 className="text-base font-bold text-gray-900">
+                      Honorable Mention, Asia Pacific Mathematical Olympiad
+                    </h3>
+                    <p className="text-xs text-gray-600 mt-1">Regional Excellence</p>
+                  </div>
+                </div>
+                <span className="text-gray-700 font-semibold text-sm whitespace-nowrap">2019</span>
+              </div>
             </div>
 
-            <div className="bg-white border border-cream-200 rounded-xl p-8 card-hover shadow-sm">
-              <h3 className="text-xl font-semibold text-academic-text">
-                Bioinformatics & ML Research
-              </h3>
-              <p className="text-academic-primary font-medium mb-3">
-                Research Focus | 2024 - Present
-              </p>
-              <p className="text-academic-text-light">
-                Exploring bioinformatics algorithms and deep learning for
-                computational biology. Working with PyTorch, scikit-learn, and
-                specialized bioinformatics tools. Developing intelligent systems
-                that connect biological data analysis with machine learning
-                applications and theoretical computer science principles.
-              </p>
+            <div className="bg-gradient-to-r from-purple-50 to-pink-50 border-l-4 border-purple-500 p-5 rounded-r-lg shadow-md hover:shadow-lg transition-shadow">
+              <div className="flex justify-between items-start flex-wrap gap-2">
+                <div className="flex items-start gap-3">
+                  <span className="text-2xl"></span>
+                  <div>
+                    <h3 className="text-base font-bold text-gray-900">
+                      International Mathematical Olympiad (IMO) Camper
+                    </h3>
+                    <p className="text-xs text-gray-600 mt-1">3-Year Training Program</p>
+                  </div>
+                </div>
+                <span className="text-gray-700 font-semibold text-sm whitespace-nowrap">2018-2020</span>
+              </div>
+            </div>
+
+            {/* Other Awards */}
+            <div className="bg-cream-50 border-l-4 border-academic-primary p-4 rounded-r-lg shadow-sm">
+              <div className="flex justify-between items-start flex-wrap gap-2">
+                <div>
+                  <h3 className="text-base font-semibold text-academic-text">
+                    Finalist, Bangladesh Blockchain Olympiad
+                  </h3>
+                </div>
+                <span className="text-academic-text-light text-sm whitespace-nowrap">2023</span>
+              </div>
+            </div>
+
+            <div className="bg-cream-50 border-l-4 border-academic-primary p-4 rounded-r-lg shadow-sm">
+              <div className="flex justify-between items-start flex-wrap gap-2">
+                <div>
+                  <h3 className="text-base font-semibold text-academic-text">
+                    3rd Place (Team), BUET CSE Fest Hackathon — Blockchain Category
+                  </h3>
+                </div>
+                <span className="text-academic-text-light text-sm whitespace-nowrap">2023</span>
+              </div>
+            </div>
+
+            <div className="bg-cream-50 border-l-4 border-academic-primary p-4 rounded-r-lg shadow-sm">
+              <div className="flex justify-between items-start flex-wrap gap-2">
+                <div>
+                  <h3 className="text-base font-semibold text-academic-text">
+                    29th Place (Team), Datathon, KUET Bitfest
+                  </h3>
+                </div>
+                <span className="text-academic-text-light text-sm whitespace-nowrap">2025</span>
+              </div>
+            </div>
+
+            <div className="bg-cream-50 border-l-4 border-academic-primary p-4 rounded-r-lg shadow-sm">
+              <div className="flex justify-between items-start flex-wrap gap-2">
+                <div>
+                  <h3 className="text-base font-semibold text-academic-text">
+                    Finalist, Therap JavaFest
+                  </h3>
+                </div>
+                <span className="text-academic-text-light text-sm whitespace-nowrap">2023, 2024</span>
+              </div>
+            </div>
+
+            <div className="bg-cream-50 border-l-4 border-academic-primary p-4 rounded-r-lg shadow-sm">
+              <div className="flex justify-between items-start flex-wrap gap-2">
+                <div>
+                  <h3 className="text-base font-semibold text-academic-text">
+                    23rd Place (Team), BUET CSE Inter-University Programming Contest (IUPC)
+                  </h3>
+                </div>
+                <span className="text-academic-text-light text-sm whitespace-nowrap">2023</span>
+              </div>
+            </div>
+
+            <div className="bg-cream-50 border-l-4 border-academic-primary p-4 rounded-r-lg shadow-sm">
+              <div className="flex justify-between items-start flex-wrap gap-2">
+                <div>
+                  <h3 className="text-base font-semibold text-academic-text">
+                    13th Place (Team), Sylhet Engineering College Inter-Uni Junior Programming Contest
+                  </h3>
+                </div>
+                <span className="text-academic-text-light text-sm whitespace-nowrap">2023</span>
+              </div>
             </div>
           </div>
         </div>
       </section>
 
       {/* Contact Section */}
-      <section id="contact" className="py-16">
+      <section id="contact" className="py-16 bg-cream-50">
         <div className="max-w-4xl mx-auto px-8">
           <h2 className="text-3xl font-semibold text-center mb-12 text-academic-text">
-            Get In Touch
+            💬 Get In Touch
           </h2>
           <div className="text-center">
             <p className="text-academic-text-light mb-8 max-w-2xl mx-auto">
-              I'm always excited to discuss bioinformatics research, collaborate
-              on ML/AI projects, or explore new opportunities in computational
-              biology and blockchain development. Let's connect and build
-              innovative solutions together!
+              I'm always open to discussing new projects, collaborating on interesting ideas, 
+              or exploring opportunities in software development and blockchain technology. 
+              Feel free to reach out!
             </p>
             <div className="flex flex-col sm:flex-row justify-center gap-4 mb-8">
               <a
@@ -419,7 +510,7 @@ export default function Home() {
                 rel="noopener noreferrer"
                 className="text-academic-text-light font-medium hover:text-academic-primary transition-colors"
               >
-                LinkedIn
+                💼 LinkedIn
               </a>
               <a
                 href="https://github.com/chottosid"
@@ -427,7 +518,7 @@ export default function Home() {
                 rel="noopener noreferrer"
                 className="text-academic-text-light font-medium hover:text-academic-primary transition-colors"
               >
-                GitHub
+                💻 GitHub
               </a>
               <a
                 href="https://www.facebook.com/fatmathman"
@@ -435,7 +526,7 @@ export default function Home() {
                 rel="noopener noreferrer"
                 className="text-academic-text-light font-medium hover:text-academic-primary transition-colors"
               >
-                Facebook
+                📘 Facebook
               </a>
               <a
                 href="mailto:swarupsidhartho@gmail.com"
