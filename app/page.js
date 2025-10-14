@@ -63,7 +63,6 @@ export default function Home() {
       {/* Hero Section */}
       <section className="pt-32 pb-24 text-center bg-gradient-to-br from-white via-cream-50 to-cream-100">
         <div className="max-w-6xl mx-auto px-8">
-          <div className="text-6xl mb-4 animate-fade-in-up">👋</div>
           <h1 className="text-5xl md:text-6xl font-bold mb-4 hero-gradient-text animate-fade-in-up">
             Swarup Sidhartho Mondol
           </h1>
@@ -71,8 +70,8 @@ export default function Home() {
             CS Student @ BUET | Full-Stack Developer | Blockchain Engineer
           </p>
           <p className="text-academic-text-light max-w-3xl mx-auto mb-8 animate-fade-in-up">
-            Building innovative solutions at the intersection of blockchain, web development, 
-            and machine learning. Graduating 2026.
+            Building innovative solutions at the intersection of blockchain, web
+            development, and machine learning. Graduating 2026.
           </p>
           <div className="flex flex-col sm:flex-row justify-center gap-4 animate-fade-in-up"></div>
         </div>
@@ -90,12 +89,13 @@ export default function Home() {
                 About
               </h3>
               <p className="text-academic-text-light mb-4">
-                CSE student at BUET with experience building full-stack applications, 
-                blockchain systems, and machine learning projects.
+                CSE student at BUET with experience building full-stack
+                applications, blockchain systems, and machine learning projects.
               </p>
               <p className="text-academic-text-light">
-                I enjoy solving complex problems through code—from blockchain-based platforms 
-                to scalable web applications. Always learning, always building.
+                I enjoy solving complex problems through code—from
+                blockchain-based platforms to scalable web applications. Always
+                learning, always building.
               </p>
             </div>
             <div>
@@ -156,9 +156,18 @@ export default function Home() {
                 🤖 Cognitia | Backend & AI Development
               </h3>
               <ul className="list-disc list-inside text-academic-text-light space-y-1 text-sm mb-4">
-                <li>Student-focused study-helper platform for Software Development Sessional course</li>
-                <li>Designed scalable REST APIs using ExpressJS and integrated AI services via Flask and OpenRouter</li>
-                <li>Deployed on Azure Cloud using Docker, NGINX load balancing, and CI/CD with GitHub Actions</li>
+                <li>
+                  Student-focused study-helper platform for Software Development
+                  Sessional course
+                </li>
+                <li>
+                  Designed scalable REST APIs using ExpressJS and integrated AI
+                  services via Flask and OpenRouter
+                </li>
+                <li>
+                  Deployed on Azure Cloud using Docker, NGINX load balancing,
+                  and CI/CD with GitHub Actions
+                </li>
               </ul>
               <div className="flex flex-wrap gap-1.5">
                 <span className="skill-tag text-xs">Express.js</span>
@@ -172,13 +181,24 @@ export default function Home() {
             <div className="bg-white border border-cream-200 rounded-xl p-6 card-hover shadow-sm">
               <h3 className="text-lg font-semibold mb-2 text-academic-text">
                 ⚖️ Veritas | Backend & Blockchain Development
-                <span className="text-xs text-academic-primary ml-2">(Selected for International Blockchain Olympiad 2025)</span>
+                <span className="text-xs text-academic-primary ml-2">
+                  (Selected for International Blockchain Olympiad 2025)
+                </span>
               </h3>
               <ul className="list-disc list-inside text-academic-text-light space-y-1 text-sm mb-4">
-                <li>Blockchain and AI-powered digital justice platform improving transparency in judicial workflows</li>
+                <li>
+                  Blockchain and AI-powered digital justice platform improving
+                  transparency in judicial workflows
+                </li>
                 <li>Built backend with ExpressJS, IPFS, and MongoDB</li>
-                <li>Developed Web3 backend and smart contracts using Hardhat and Solidity</li>
-                <li>Deployed on Azure Cloud with Docker and automated CI/CD pipelines</li>
+                <li>
+                  Developed Web3 backend and smart contracts using Hardhat and
+                  Solidity
+                </li>
+                <li>
+                  Deployed on Azure Cloud with Docker and automated CI/CD
+                  pipelines
+                </li>
               </ul>
               <div className="flex flex-wrap gap-1.5">
                 <span className="skill-tag text-xs">Express.js</span>
@@ -195,8 +215,14 @@ export default function Home() {
               </h3>
               <ul className="list-disc list-inside text-academic-text-light space-y-1 text-sm mb-4">
                 <li>Social and wellness platform designed for elderly users</li>
-                <li>Built accessible frontend with React, emphasizing senior-friendly navigation and readability</li>
-                <li>Implemented microservice backend using Spring Boot, MySQL, RabbitMQ, and Redis</li>
+                <li>
+                  Built accessible frontend with React, emphasizing
+                  senior-friendly navigation and readability
+                </li>
+                <li>
+                  Implemented microservice backend using Spring Boot, MySQL,
+                  RabbitMQ, and Redis
+                </li>
               </ul>
               <div className="flex flex-wrap gap-1.5">
                 <span className="skill-tag text-xs">React</span>
@@ -214,8 +240,14 @@ export default function Home() {
               <ul className="list-disc list-inside text-academic-text-light space-y-1 text-sm mb-4">
                 <li>Train ticketing platform modeled after Shohoz services</li>
                 <li>Developed backend with Django</li>
-                <li>Designed frontend for booking, scheduling, and user management using Jinja</li>
-                <li>Wrote all SQL queries manually as per project requirements (no ORM used)</li>
+                <li>
+                  Designed frontend for booking, scheduling, and user management
+                  using Jinja
+                </li>
+                <li>
+                  Wrote all SQL queries manually as per project requirements (no
+                  ORM used)
+                </li>
               </ul>
               <div className="flex flex-wrap gap-1.5">
                 <span className="skill-tag text-xs">Django</span>
@@ -230,10 +262,22 @@ export default function Home() {
                 � ChinhoAI | Full Stack Development
               </h3>
               <ul className="list-disc list-inside text-academic-text-light space-y-1 text-sm mb-4">
-                <li>AI-powered sign language interpreter featuring real ASL video demonstrations</li>
-                <li>Built interactive video player with fullscreen support and playback controls using React</li>
-                <li>Implemented smooth animations and transitions using Framer Motion</li>
-                <li>Designed responsive UI with drag-and-drop video upload functionality</li>
+                <li>
+                  AI-powered sign language interpreter featuring real ASL video
+                  demonstrations
+                </li>
+                <li>
+                  Built interactive video player with fullscreen support and
+                  playback controls using React
+                </li>
+                <li>
+                  Implemented smooth animations and transitions using Framer
+                  Motion
+                </li>
+                <li>
+                  Designed responsive UI with drag-and-drop video upload
+                  functionality
+                </li>
               </ul>
               <div className="flex flex-wrap gap-1.5">
                 <span className="skill-tag text-xs">Next.js</span>
@@ -248,10 +292,22 @@ export default function Home() {
                 💎 Sticky Studio | Full Stack & AI Development
               </h3>
               <ul className="list-disc list-inside text-academic-text-light space-y-1 text-sm mb-4">
-                <li>Built opportunity management platform for tracking scholarships, PhD positions, and competitions</li>
-                <li>Integrated Gemini AI for automated extraction of opportunity details from documents and images</li>
-                <li>Designed PostgreSQL database schema with advanced indexing for search optimization</li>
-                <li>Implemented authentication system and responsive UI with modern design patterns</li>
+                <li>
+                  Built opportunity management platform for tracking
+                  scholarships, PhD positions, and competitions
+                </li>
+                <li>
+                  Integrated Gemini AI for automated extraction of opportunity
+                  details from documents and images
+                </li>
+                <li>
+                  Designed PostgreSQL database schema with advanced indexing for
+                  search optimization
+                </li>
+                <li>
+                  Implemented authentication system and responsive UI with
+                  modern design patterns
+                </li>
               </ul>
               <div className="flex flex-wrap gap-1.5">
                 <span className="skill-tag text-xs">Next.js</span>
@@ -263,11 +319,18 @@ export default function Home() {
 
             <div className="bg-white border border-cream-200 rounded-xl p-6 card-hover shadow-sm">
               <h3 className="text-lg font-semibold mb-2 text-academic-text">
-                �📹 IEEE Video and ImagProcessing Cup 2025 | Dataset Preprocessing
+                �📹 IEEE Video and ImagProcessing Cup 2025 | Dataset
+                Preprocessing
               </h3>
               <ul className="list-disc list-inside text-academic-text-light space-y-1 text-sm mb-4">
-                <li>Collaborated in team project for IEEE VIPCup 2025, focusing on drone vs. bird classification using RGB and IR imagery</li>
-                <li>Designed and implemented advanced dataset preprocessing pipeline for YOLO-based temporal models</li>
+                <li>
+                  Collaborated in team project for IEEE VIPCup 2025, focusing on
+                  drone vs. bird classification using RGB and IR imagery
+                </li>
+                <li>
+                  Designed and implemented advanced dataset preprocessing
+                  pipeline for YOLO-based temporal models
+                </li>
               </ul>
               <div className="flex flex-wrap gap-1.5">
                 <span className="skill-tag text-xs">Python</span>
@@ -290,11 +353,17 @@ export default function Home() {
             <div className="bg-cream-50 border border-cream-200 rounded-xl p-6 card-hover">
               <div className="flex justify-between items-start mb-3">
                 <h3 className="text-lg font-semibold text-academic-text">
-                  DDS-E-Sim: A Transformer-based Probabilistic Generative Framework for Simulating Error-Prone DNA Sequences for DNA Data Storage
+                  DDS-E-Sim: A Transformer-based Probabilistic Generative
+                  Framework for Simulating Error-Prone DNA Sequences for DNA
+                  Data Storage
                 </h3>
-                <span className="text-xs text-academic-primary font-medium whitespace-nowrap ml-4">2025</span>
+                <span className="text-xs text-academic-primary font-medium whitespace-nowrap ml-4">
+                  2025
+                </span>
               </div>
-              <p className="text-sm text-green-700 font-medium mb-2">Accepted at NeurIPS 2025 (FPI and SPIGM Tracks)</p>
+              <p className="text-sm text-green-700 font-medium mb-2">
+                Accepted at NeurIPS 2025 (FPI and SPIGM Tracks)
+              </p>
               <p className="text-sm text-academic-text-light mb-3">
                 Collaborators: Prof. A.B.M. Alim Al Islam, BUET
               </p>
@@ -305,7 +374,9 @@ export default function Home() {
                 <h3 className="text-lg font-semibold text-academic-text">
                   Machine Learning and Data Imbalance Techniques
                 </h3>
-                <span className="text-xs text-blue-600 font-medium whitespace-nowrap ml-4">In Progress</span>
+                <span className="text-xs text-blue-600 font-medium whitespace-nowrap ml-4">
+                  In Progress
+                </span>
               </div>
               <p className="text-sm text-academic-text-light mb-3">
                 Collaborators: Prof. Sukarna Barua, BUET
@@ -317,7 +388,9 @@ export default function Home() {
                 <h3 className="text-lg font-semibold text-academic-text">
                   Quantum Computing and Quantum Machine Learning
                 </h3>
-                <span className="text-xs text-blue-600 font-medium whitespace-nowrap ml-4">In Progress</span>
+                <span className="text-xs text-blue-600 font-medium whitespace-nowrap ml-4">
+                  In Progress
+                </span>
               </div>
               <p className="text-sm text-academic-text-light mb-3">
                 Collaborators: Prof. Sohel Rahman, BUET
@@ -339,7 +412,9 @@ export default function Home() {
                 <h3 className="text-lg font-semibold text-academic-text">
                   Bangladesh University of Engineering and Technology (BUET)
                 </h3>
-                <span className="text-academic-text-light">Jan 2022 - Jan 2026</span>
+                <span className="text-academic-text-light">
+                  Jan 2022 - Jan 2026
+                </span>
               </div>
               <p className="text-academic-primary font-medium mb-2">
                 Bachelor of Science in Computer Science and Engineering
@@ -366,12 +441,14 @@ export default function Home() {
                   <span className="text-2xl"></span>
                   <div>
                     <h3 className="text-base font-bold text-gray-900">
-                      Finalist, International Blockchain Olympiad (representing Bangladesh)
+                      Finalist, International Blockchain Olympiad (representing
+                      Bangladesh)
                     </h3>
-                    <p className="text-xs text-gray-600 mt-1">International Recognition</p>
                   </div>
                 </div>
-                <span className="text-gray-700 font-semibold text-sm whitespace-nowrap">2025</span>
+                <span className="text-gray-700 font-semibold text-sm whitespace-nowrap">
+                  2025
+                </span>
               </div>
             </div>
 
@@ -383,10 +460,11 @@ export default function Home() {
                     <h3 className="text-base font-bold text-gray-900">
                       Honorable Mention, Asia Pacific Mathematical Olympiad
                     </h3>
-                    <p className="text-xs text-gray-600 mt-1">Regional Excellence</p>
                   </div>
                 </div>
-                <span className="text-gray-700 font-semibold text-sm whitespace-nowrap">2019</span>
+                <span className="text-gray-700 font-semibold text-sm whitespace-nowrap">
+                  2019
+                </span>
               </div>
             </div>
 
@@ -398,10 +476,11 @@ export default function Home() {
                     <h3 className="text-base font-bold text-gray-900">
                       International Mathematical Olympiad (IMO) Camper
                     </h3>
-                    <p className="text-xs text-gray-600 mt-1">3-Year Training Program</p>
                   </div>
                 </div>
-                <span className="text-gray-700 font-semibold text-sm whitespace-nowrap">2018-2020</span>
+                <span className="text-gray-700 font-semibold text-sm whitespace-nowrap">
+                  2018-2020
+                </span>
               </div>
             </div>
 
@@ -413,7 +492,9 @@ export default function Home() {
                     Finalist, Bangladesh Blockchain Olympiad
                   </h3>
                 </div>
-                <span className="text-academic-text-light text-sm whitespace-nowrap">2023</span>
+                <span className="text-academic-text-light text-sm whitespace-nowrap">
+                  2023
+                </span>
               </div>
             </div>
 
@@ -421,10 +502,13 @@ export default function Home() {
               <div className="flex justify-between items-start flex-wrap gap-2">
                 <div>
                   <h3 className="text-base font-semibold text-academic-text">
-                    3rd Place (Team), BUET CSE Fest Hackathon — Blockchain Category
+                    3rd Place (Team), BUET CSE Fest Hackathon — Blockchain
+                    Category
                   </h3>
                 </div>
-                <span className="text-academic-text-light text-sm whitespace-nowrap">2023</span>
+                <span className="text-academic-text-light text-sm whitespace-nowrap">
+                  2023
+                </span>
               </div>
             </div>
 
@@ -435,7 +519,9 @@ export default function Home() {
                     29th Place (Team), Datathon, KUET Bitfest
                   </h3>
                 </div>
-                <span className="text-academic-text-light text-sm whitespace-nowrap">2025</span>
+                <span className="text-academic-text-light text-sm whitespace-nowrap">
+                  2025
+                </span>
               </div>
             </div>
 
@@ -446,7 +532,9 @@ export default function Home() {
                     Finalist, Therap JavaFest
                   </h3>
                 </div>
-                <span className="text-academic-text-light text-sm whitespace-nowrap">2023, 2024</span>
+                <span className="text-academic-text-light text-sm whitespace-nowrap">
+                  2023, 2024
+                </span>
               </div>
             </div>
 
@@ -454,10 +542,13 @@ export default function Home() {
               <div className="flex justify-between items-start flex-wrap gap-2">
                 <div>
                   <h3 className="text-base font-semibold text-academic-text">
-                    23rd Place (Team), BUET CSE Inter-University Programming Contest (IUPC)
+                    23rd Place (Team), BUET CSE Inter-University Programming
+                    Contest (IUPC)
                   </h3>
                 </div>
-                <span className="text-academic-text-light text-sm whitespace-nowrap">2023</span>
+                <span className="text-academic-text-light text-sm whitespace-nowrap">
+                  2023
+                </span>
               </div>
             </div>
 
@@ -465,10 +556,13 @@ export default function Home() {
               <div className="flex justify-between items-start flex-wrap gap-2">
                 <div>
                   <h3 className="text-base font-semibold text-academic-text">
-                    13th Place (Team), Sylhet Engineering College Inter-Uni Junior Programming Contest
+                    13th Place (Team), Sylhet Engineering College Inter-Uni
+                    Junior Programming Contest
                   </h3>
                 </div>
-                <span className="text-academic-text-light text-sm whitespace-nowrap">2023</span>
+                <span className="text-academic-text-light text-sm whitespace-nowrap">
+                  2023
+                </span>
               </div>
             </div>
           </div>
@@ -483,9 +577,9 @@ export default function Home() {
           </h2>
           <div className="text-center">
             <p className="text-academic-text-light mb-8 max-w-2xl mx-auto">
-              I'm always open to discussing new projects, collaborating on interesting ideas, 
-              or exploring opportunities in software development and blockchain technology. 
-              Feel free to reach out!
+              I'm always open to discussing new projects, collaborating on
+              interesting ideas, or exploring opportunities in software
+              development and blockchain technology. Feel free to reach out!
             </p>
             <div className="flex flex-col sm:flex-row justify-center gap-4 mb-8">
               <a
@@ -543,10 +637,7 @@ export default function Home() {
       <footer className="bg-cream-50 border-t border-cream-200 py-12 text-center">
         <div className="max-w-6xl mx-auto px-8">
           <p className="text-academic-text-light">
-            &copy; 2024 Swarup Sidhartho Mondol. All rights reserved.
-          </p>
-          <p className="text-academic-text-light mt-2">
-            Built with Next.js and Tailwind CSS, hosted on GitHub Pages
+            &copy; 2025 Swarup Sidhartho Mondol. All rights reserved.
           </p>
         </div>
       </footer>
