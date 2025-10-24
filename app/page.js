@@ -435,7 +435,7 @@ export default function Home() {
           </h2>
           <div className="space-y-3 max-w-4xl mx-auto">
             {/* Champion Achievement - Most Prominent */}
-            <div className="bg-gradient-to-r from-yellow-100 via-gold-50 to-yellow-100 border-2 border-yellow-400 p-6 rounded-xl shadow-xl hover:shadow-2xl transition-all duration-300 transform hover:-translate-y-1">
+            {/* <div className="bg-gradient-to-r from-yellow-100 via-gold-50 to-yellow-100 border-2 border-yellow-400 p-6 rounded-xl shadow-xl hover:shadow-2xl transition-all duration-300 transform hover:-translate-y-1">
               <div className="flex justify-between items-start flex-wrap gap-2">
                 <div className="flex items-start gap-3">
                   <span className="text-3xl">🏆</span>
@@ -444,14 +444,16 @@ export default function Home() {
                       <span className="inline-block w-2 h-2 bg-yellow-500 rounded-full animate-pulse"></span>
                       Champion, International Blockchain Olympiad
                     </h3>
-                    <p className="text-sm text-yellow-700 font-medium mt-1">🥇 First Place Winner (representing Bangladesh)</p>
+                    <p className="text-sm text-yellow-700 font-medium mt-1">
+                      🥇 First Place Winner (representing Bangladesh)
+                    </p>
                   </div>
                 </div>
                 <span className="text-yellow-800 font-bold text-base bg-yellow-200 px-3 py-1 rounded-full">
                   2025
                 </span>
               </div>
-            </div>
+            </div> */}
 
             {/* Top 3 Highlighted Awards */}
             <div className="bg-gradient-to-r from-yellow-50 to-amber-50 border-l-4 border-yellow-500 p-5 rounded-r-lg shadow-md hover:shadow-lg transition-shadow">
