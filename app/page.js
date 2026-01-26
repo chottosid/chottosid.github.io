@@ -447,7 +447,7 @@ export default function Home() {
                 BSc in Computer Science and Engineering
               </p>
               <p className="text-academic-text-light text-sm">
-                CGPA: 3.60 (as of Level 4, Term 1)
+                CGPA: 3.59 (as of Level 4, Term 1)
               </p>
             </div>
           </div>
