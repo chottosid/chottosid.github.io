@@ -5,7 +5,6 @@ import { useState, useEffect } from "react";
 export default function Home() {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
   const [darkMode, setDarkMode] = useState(false);
-  const [copied, setCopied] = useState(false);
 
   useEffect(() => {
     const saved = localStorage.getItem("darkMode");
@@ -25,38 +24,30 @@ export default function Home() {
     }
   }, [darkMode]);
 
-  const copyEmail = () => {
-    navigator.clipboard.writeText("swarupsidhartho@gmail.com");
-    setCopied(true);
-    setTimeout(() => setCopied(false), 2000);
-  };
-
   const navLinks = [
-    { href: "#about", label: "About" },
+    { href: "#research", label: "Research" },
     { href: "#experience", label: "Experience" },
     { href: "#projects", label: "Projects" },
-    { href: "#research", label: "Research" },
     { href: "#education", label: "Education" },
     { href: "#awards", label: "Awards" },
-    { href: "#contact", label: "Contact" },
+    { href: "#skills", label: "Skills" },
   ];
 
   return (
-    <main className="bg-white dark:bg-gray-900 transition-colors duration-300">
+    <main className="bg-white dark:bg-ink-900 min-h-screen">
       {/* Navigation */}
-      <nav className="fixed top-0 left-0 right-0 bg-white/95 dark:bg-gray-900/95 backdrop-blur-md border-b border-cream-300 dark:border-gray-700 z-50 py-4">
-        <div className="max-w-6xl mx-auto px-8 flex justify-between items-center">
-          <div className="text-xl font-semibold text-academic-text dark:text-white">
-            Swarup Sidhartho Mondol
-          </div>
+      <nav className="fixed top-0 left-0 right-0 bg-white/95 dark:bg-ink-900/95 backdrop-blur-sm border-b border-ink-200 dark:border-ink-700 z-50">
+        <div className="max-w-3xl mx-auto px-6 h-14 flex justify-between items-center">
+          <a href="#" className="text-sm font-semibold text-ink-800 dark:text-ink-100">
+            Swarup S. Mondol
+          </a>
 
-          {/* Desktop Navigation */}
-          <ul className="hidden md:flex space-x-8">
+          <ul className="hidden md:flex items-center space-x-6">
             {navLinks.map((link) => (
               <li key={link.href}>
                 <a
                   href={link.href}
-                  className="nav-link text-academic-text-light dark:text-gray-300 font-medium hover:text-academic-primary dark:hover:text-academic-primary transition-colors relative"
+                  className="text-sm text-ink-500 dark:text-ink-400 hover:text-ink-800 dark:hover:text-ink-100 transition-colors"
                 >
                   {link.label}
                 </a>
@@ -64,36 +55,34 @@ export default function Home() {
             ))}
           </ul>
 
-          {/* Dark Mode Toggle & Mobile Menu Button */}
-          <div className="flex items-center gap-4">
+          <div className="flex items-center gap-3">
             <button
               onClick={() => setDarkMode(!darkMode)}
-              className="p-2 rounded-lg bg-cream-100 dark:bg-gray-800 text-academic-text dark:text-white hover:bg-cream-200 dark:hover:bg-gray-700 transition-colors"
+              className="p-1.5 rounded text-ink-500 dark:text-ink-400 hover:text-ink-800 dark:hover:text-ink-100 transition-colors"
               aria-label="Toggle dark mode"
             >
               {darkMode ? (
-                <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 3v1m0 16v1m9-9h-1M4 12H3m15.364 6.364l-.707-.707M6.343 6.343l-.707-.707m12.728 0l-.707.707M6.343 17.657l-.707.707M16 12a4 4 0 11-8 0 4 4 0 018 0z" />
                 </svg>
               ) : (
-                <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M20.354 15.354A9 9 0 018.646 3.646 9.003 9.003 0 0012 21a9.003 9.003 0 008.354-5.646z" />
                 </svg>
               )}
             </button>
 
-            {/* Mobile Menu Button */}
             <button
               onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
-              className="md:hidden p-2 rounded-lg bg-cream-100 dark:bg-gray-800 text-academic-text dark:text-white"
+              className="md:hidden p-1.5 rounded text-ink-500 dark:text-ink-400"
               aria-label="Toggle menu"
             >
               {mobileMenuOpen ? (
-                <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M6 18L18 6M6 6l12 12" />
                 </svg>
               ) : (
-                <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M4 6h16M4 12h16M4 18h16" />
                 </svg>
               )}
@@ -101,16 +90,15 @@ export default function Home() {
           </div>
         </div>
 
-        {/* Mobile Menu Overlay */}
         {mobileMenuOpen && (
-          <div className="md:hidden fixed inset-0 top-[72px] bg-white dark:bg-gray-900 z-40 animate-slide-in">
-            <ul className="flex flex-col items-center justify-center h-full space-y-8">
+          <div className="md:hidden border-t border-ink-200 dark:border-ink-700 bg-white dark:bg-ink-900">
+            <ul className="flex flex-col py-2">
               {navLinks.map((link) => (
                 <li key={link.href}>
                   <a
                     href={link.href}
                     onClick={() => setMobileMenuOpen(false)}
-                    className="text-2xl font-medium text-academic-text dark:text-white hover:text-academic-primary transition-colors"
+                    className="block px-6 py-2.5 text-sm text-ink-600 dark:text-ink-300 hover:text-ink-800 dark:hover:text-ink-100"
                   >
                     {link.label}
                   </a>
@@ -121,557 +109,296 @@ export default function Home() {
         )}
       </nav>
 
-      {/* Hero Section */}
-      <section className="pt-32 pb-24 text-center hero-animated-bg dark:bg-gradient-to-br dark:from-gray-900 dark:via-gray-800 dark:to-gray-900">
-        <div className="max-w-6xl mx-auto px-8">
-          <img
-            src="/portrait.jpg"
-            alt="Swarup Sidhartho Mondol"
-            className="w-28 h-28 md:w-36 md:h-36 rounded-full object-cover mx-auto mb-6 ring-2 ring-cream-200 dark:ring-gray-600 shadow-sm scale-in"
-          />
-          <h1 className="text-5xl md:text-6xl font-bold mb-3 hero-gradient-text dark:text-white text-reveal">
-            Swarup Sidhartho Mondol
-          </h1>
-          <p className="text-xl md:text-2xl text-academic-text-light dark:text-gray-300 mb-3 fade-in-up fade-in-up-delay-2">
-            Final-year CS student at BUET
-          </p>
-          <p className="text-academic-text-light dark:text-gray-400 max-w-2xl mx-auto mb-8 fade-in-up fade-in-up-delay-3">
-            If it involves code and a problem worth solving, count me in.
-          </p>
-          <div className="flex flex-col sm:flex-row justify-center gap-3 fade-in-up fade-in-up-delay-4">
-            <a
-              href="mailto:swarupsidhartho@gmail.com"
-              className="inline-flex items-center justify-center gap-2 bg-academic-primary text-white px-6 py-3 rounded-lg font-medium transition-all hover:bg-academic-secondary hover:-translate-y-0.5"
-            >
-              Say hello
-            </a>
-            <a
-              href="#projects"
-              className="inline-flex items-center justify-center gap-2 bg-transparent text-academic-primary dark:text-academic-primary border border-academic-primary px-6 py-3 rounded-lg font-medium transition-all hover:bg-academic-primary hover:text-white"
-            >
-              See my work
-            </a>
-          </div>
-        </div>
-      </section>
+      {/* Content */}
+      <div className="max-w-3xl mx-auto px-6 pt-24 pb-16">
 
-      {/* About Section */}
-      <section id="about" className="py-16 dark:bg-gray-900">
-        <div className="max-w-6xl mx-auto px-8">
-          <h2 className="text-3xl font-semibold text-center mb-12 text-academic-text dark:text-white">About Me</h2>
-          <div className="grid md:grid-cols-2 gap-12">
+        {/* Header */}
+        <header className="mb-12">
+          <div className="flex items-start gap-5">
+            <img
+              src="/portrait.jpg"
+              alt="Swarup Sidhartho Mondol"
+              className="w-20 h-20 rounded-full object-cover flex-shrink-0"
+            />
             <div>
-              <h3 className="text-xl font-semibold mb-3 text-academic-text dark:text-white">What I Do</h3>
-              <p className="text-academic-text-light dark:text-gray-300 mb-3">
-                I&apos;m finishing up my CSE degree at BUET. Most of my time goes into
-                writing code (okay, mostly prompt engineering these days), playing flute, or procrastinating productively.
-              </p>
-              <p className="text-academic-text-light dark:text-gray-300">
-                I write clean, well structured codes. Ones that someone else can read six
-                months later without needing help from a LLM. I am currently into multiple research projects alongside an internship
-              </p>
+              <h1 className="text-2xl font-bold text-ink-900 dark:text-white">Swarup Sidhartho Mondol</h1>
+              <p className="text-ink-500 dark:text-ink-400 mt-0.5">Software Engineer &amp; Researcher &mdash; CSE, BUET</p>
+              <div className="flex flex-wrap gap-x-3 gap-y-1 mt-2 text-sm">
+                <a href="mailto:swarupsidhartho@gmail.com" className="text-link dark:text-blue-400 hover:underline">Email</a>
+                <span className="text-ink-300 dark:text-ink-600">|</span>
+                <a href="https://github.com/chottosid" target="_blank" rel="noopener noreferrer" className="text-link dark:text-blue-400 hover:underline">GitHub</a>
+                <span className="text-ink-300 dark:text-ink-600">|</span>
+                <a href="https://www.linkedin.com/in/swarup-sidhartho-mondol-032b90257/" target="_blank" rel="noopener noreferrer" className="text-link dark:text-blue-400 hover:underline">LinkedIn</a>
+                <span className="text-ink-300 dark:text-ink-600">|</span>
+                <a href="https://swarupsidhartho.xyz" className="text-link dark:text-blue-400 hover:underline">Website</a>
+              </div>
             </div>
+          </div>
+        </header>
+
+        {/* Professional Summary */}
+        <section className="mb-10">
+          <p className="text-ink-600 dark:text-ink-300 leading-relaxed">
+            Software engineer with hands-on experience building distributed backend systems and AI-integrated pipelines. Proficient in designing async task architectures, RESTful services, and multi-service deployments. Experienced taking systems from development to production across FastAPI, Django, Spring Boot, Node.js, and cloud infrastructure.
+          </p>
+        </section>
+
+        {/* Research */}
+        <section id="research" className="mb-10">
+          <h2 className="text-lg font-bold section-rule">Research</h2>
+          <div className="space-y-5">
             <div>
-              <h3 className="text-xl font-semibold mb-3 text-academic-text dark:text-white">Outside of Serious Stuff</h3>
-              <div className="bg-cream-50 dark:bg-gray-800 border border-cream-200 dark:border-gray-700 rounded-xl p-6">
-                <ul className="text-academic-text-light dark:text-gray-300 space-y-3 text-base">
-                  <li className="stagger-item">🎶 I play the bansuri (Indian bamboo flute). Been at it for about 8 years now.</li>
-                  <li className="stagger-item">📐 Had a one-sided love affair with mathematics in high school. It never wrote back.</li>
-                  <li className="stagger-item">☕ Tea over coffee, always. Preferably while listening to something classical. Personal record: 9 cups in a single day.</li>
-                  <li className="stagger-item">🌌 Stargazing is my favorite pastime.</li>
-                  <li className="stagger-item">🏛️ Every new city I visit, I make a pilgrimage to its library and museum. Yes, I&apos;m that kind of nerd.</li>
-                </ul>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      {/* Work Experience Section */}
-      <section id="experience" className="py-16 bg-cream-50 dark:bg-gray-800">
-        <div className="max-w-6xl mx-auto px-8">
-          <h2 className="text-3xl font-semibold text-center mb-12 text-academic-text dark:text-white">Work Experience</h2>
-          <div className="space-y-6">
-            <div className="bg-white dark:bg-gray-900 border-l-4 border-academic-primary p-6 rounded-r-lg shadow-sm card-hover">
-              <div className="flex justify-between items-start flex-wrap gap-2 mb-2">
-                <div>
-                  <h3 className="text-lg font-semibold text-academic-text dark:text-white">Junior Software Engineer <span className="text-academic-text-light dark:text-gray-400 font-normal">(Part-time)</span></h3>
-                  <p className="text-academic-primary font-medium">PeriScaleAI</p>
-                </div>
-                <span className="text-academic-text-light dark:text-gray-400 text-sm">Oct 2025 - Present</span>
-              </div>
-              <p className="text-academic-text-light dark:text-gray-300 text-sm mb-3">
-                Building AI agents and agentic systems to automate complex workflows. Working on LangGraph-based multi-agent architectures, tool integrations, and production-grade AI pipelines.
-              </p>
-              <div className="flex flex-wrap gap-1.5">
-                <span className="skill-tag text-xs">LangGraph</span>
-                <span className="skill-tag text-xs">LangChain</span>
-                <span className="skill-tag text-xs">FastAPI</span>
-                <span className="skill-tag text-xs">Python</span>
-                <span className="skill-tag text-xs">AI Agents</span>
-              </div>
-            </div>
-
-            <div className="bg-white dark:bg-gray-900 border-l-4 border-academic-secondary p-6 rounded-r-lg shadow-sm card-hover">
-              <div className="flex justify-between items-start flex-wrap gap-2 mb-2">
-                <div>
-                  <h3 className="text-lg font-semibold text-academic-text dark:text-white">Backend Developer</h3>
-                  <p className="text-academic-primary font-medium">Binary Bits</p>
-                </div>
-                <span className="text-academic-text-light dark:text-gray-400 text-sm">2023</span>
-              </div>
-              <p className="text-academic-text-light dark:text-gray-300 text-sm mb-3">
-                Developed and maintained backend services and APIs. Worked on database design, server-side logic, and integration with frontend applications.
-              </p>
-              <div className="flex flex-wrap gap-1.5">
-                <span className="skill-tag text-xs">Node.js</span>
-                <span className="skill-tag text-xs">Express.js</span>
-                <span className="skill-tag text-xs">MongoDB</span>
-                <span className="skill-tag text-xs">REST APIs</span>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      {/* Projects Section */}
-      <section id="projects" className="py-16 dark:bg-gray-900">
-        <div className="max-w-6xl mx-auto px-8">
-          <h2 className="text-3xl font-semibold text-center mb-12 text-academic-text dark:text-white">Things I&apos;ve Built</h2>
-          <div className="grid md:grid-cols-2 gap-6">
-            {/* Cognitia */}
-            <div className="bg-white dark:bg-gray-800 border border-cream-200 dark:border-gray-700 rounded-xl overflow-hidden card-hover shadow-sm">
-              <div className="overflow-hidden">
-                <img src="/cognitia.png" alt="Cognitia - Study helper platform" className="project-thumbnail hover:scale-105 transition-transform duration-300" />
-              </div>
-              <div className="p-6">
-                <h3 className="text-lg font-semibold mb-2 text-academic-text dark:text-white">
-                  🤖 Cognitia <span className="ml-2 bg-academic-primary/10 text-academic-primary text-xs px-2 py-0.5 rounded-full">Featured</span>
+              <div className="flex items-start justify-between gap-2">
+                <h3 className="font-serif font-semibold text-ink-800 dark:text-ink-100">
+                  DDS-E-Sim: A Transformer-based Probabilistic Generative Framework for Simulating Error-Prone DNA Sequences for DNA Data Storage
                 </h3>
-                <p className="text-academic-text-light dark:text-gray-300 text-sm mb-1">
-                  A study helper cum social media platform for BUETians. Made for my final year project. Built the backend, handled the CI/CD pipeline, and deployed it on Azure.
-                </p>
-                <p className="text-academic-text-light dark:text-gray-300 text-sm mb-4">
-                  Used express.js for the backend, AI services exposed with fastapi, Docker for containerization, and GitHub Actions for CI/CD.
-                </p>
-                <div className="flex flex-wrap gap-1.5 mb-4">
-                  <span className="skill-tag text-xs">Express.js</span>
-                  <span className="skill-tag text-xs">Flask</span>
-                  <span className="skill-tag text-xs">Docker</span>
-                  <span className="skill-tag text-xs">GitHub Actions</span>
-                  <span className="skill-tag text-xs">Azure</span>
-                  <span className="skill-tag text-xs">NGINX</span>
-                </div>
-                <div className="flex items-center gap-3 text-sm">
-                  <a href="https://github.com/chottosid" target="_blank" rel="noopener noreferrer" className="project-link text-academic-primary hover:underline">Code</a>
-                  <span className="text-cream-400 dark:text-gray-600">•</span>
-                  <a href="#" className="project-link text-academic-primary hover:underline">Demo</a>
-                </div>
+                <span className="status-badge accepted">Accepted</span>
               </div>
-            </div>
-
-            {/* Veritas */}
-            <div className="bg-white dark:bg-gray-800 border border-cream-200 dark:border-gray-700 rounded-xl overflow-hidden card-hover shadow-sm">
-              <div className="overflow-hidden">
-                <img src="/veritas.png" alt="Veritas - Blockchain justice platform" className="project-thumbnail hover:scale-105 transition-transform duration-300" />
-              </div>
-              <div className="p-6">
-                <h3 className="text-lg font-semibold mb-2 text-academic-text dark:text-white">
-                  ⚖️ Veritas <span className="ml-2 bg-academic-primary/10 text-academic-primary text-xs px-2 py-0.5 rounded-full">Featured</span>
-                </h3>
-                <p className="text-academic-text-light dark:text-gray-300 text-sm mb-1">
-                  Digital justice platform using public blockchain for transparency. Won us a spot at IBCOL 2025.
-                </p>
-                <p className="text-academic-text-light dark:text-gray-300 text-sm mb-4">
-                  Hybrid Architecture of Web2 and Web3. Smart contracts with solidity, IPFS for evidence storage. Backend with express.js and ethers.js.
-                </p>
-                <div className="flex flex-wrap gap-1.5 mb-4">
-                  <span className="skill-tag text-xs">Express.js</span>
-                  <span className="skill-tag text-xs">MongoDB</span>
-                  <span className="skill-tag text-xs">Solidity</span>
-                  <span className="skill-tag text-xs">Hardhat</span>
-                  <span className="skill-tag text-xs">IPFS</span>
-                  <span className="skill-tag text-xs">Ethers.js</span>
-                </div>
-                <div className="flex items-center gap-3 text-sm">
-                  <a href="https://github.com/chottosid" target="_blank" rel="noopener noreferrer" className="project-link text-academic-primary hover:underline">Code</a>
-                  <span className="text-cream-400 dark:text-gray-600">•</span>
-                  <a href="#" className="project-link text-academic-primary hover:underline">Demo</a>
-                </div>
-              </div>
-            </div>
-
-            {/* Shohochori */}
-            <div className="bg-white dark:bg-gray-800 border border-cream-200 dark:border-gray-700 rounded-xl overflow-hidden card-hover shadow-sm">
-              <div className="overflow-hidden">
-                <img src="/shohochori.png" alt="Shohochori - Health tracking app" className="project-thumbnail hover:scale-105 transition-transform duration-300" />
-              </div>
-              <div className="p-6">
-                <h3 className="text-lg font-semibold mb-2 text-academic-text dark:text-white">🧓 Shohochori</h3>
-                <p className="text-academic-text-light dark:text-gray-300 text-sm mb-1">
-                  Health, wellness, personal tracking app built with elderly users in mind.
-                </p>
-                <p className="text-academic-text-light dark:text-gray-300 text-sm mb-4">
-                  Finalist at Therap Javafest. Microservices architecture with Spring Boot, Redis, Celery etc.
-                </p>
-                <div className="flex flex-wrap gap-1.5 mb-4">
-                  <span className="skill-tag text-xs">React</span>
-                  <span className="skill-tag text-xs">Spring Boot</span>
-                  <span className="skill-tag text-xs">MySQL</span>
-                  <span className="skill-tag text-xs">RabbitMQ</span>
-                  <span className="skill-tag text-xs">Redis</span>
-                </div>
-                <div className="flex items-center gap-3 text-sm">
-                  <a href="https://github.com/chottosid" target="_blank" rel="noopener noreferrer" className="project-link text-academic-primary hover:underline">Code</a>
-                  <span className="text-cream-400 dark:text-gray-600">•</span>
-                  <a href="#" className="project-link text-academic-primary hover:underline">Demo</a>
-                </div>
-              </div>
-            </div>
-
-            {/* Kothin-Trains */}
-            <div className="bg-white dark:bg-gray-800 border border-cream-200 dark:border-gray-700 rounded-xl overflow-hidden card-hover shadow-sm">
-              <div className="overflow-hidden">
-                <img src="/kothin-trains.png" alt="Kothin-Trains - Ticket booking" className="project-thumbnail hover:scale-105 transition-transform duration-300" />
-              </div>
-              <div className="p-6">
-                <h3 className="text-lg font-semibold mb-2 text-academic-text dark:text-white">🚂 Kothin-Trains</h3>
-                <p className="text-academic-text-light dark:text-gray-300 text-sm mb-1">
-                  Train ticket booking, inspired by Shohoz. For an academic course.
-                </p>
-                <p className="text-academic-text-light dark:text-gray-300 text-sm mb-4">
-                  Backend with Django, frontend with HTML, CSS, JS.
-                </p>
-                <div className="flex flex-wrap gap-1.5 mb-4">
-                  <span className="skill-tag text-xs">Django</span>
-                  <span className="skill-tag text-xs">Python</span>
-                  <span className="skill-tag text-xs">Jinja</span>
-                  <span className="skill-tag text-xs">SQL</span>
-                </div>
-                <div className="flex items-center gap-3 text-sm">
-                  <a href="https://github.com/chottosid" target="_blank" rel="noopener noreferrer" className="project-link text-academic-primary hover:underline">Code</a>
-                  <span className="text-cream-400 dark:text-gray-600">•</span>
-                  <a href="#" className="project-link text-academic-primary hover:underline">Demo</a>
-                </div>
-              </div>
-            </div>
-
-            {/* ChinhoAI */}
-            <div className="bg-white dark:bg-gray-800 border border-cream-200 dark:border-gray-700 rounded-xl overflow-hidden card-hover shadow-sm">
-              <div className="overflow-hidden">
-                <img src="/chinhoai.png" alt="ChinhoAI - Sign language translation" className="project-thumbnail hover:scale-105 transition-transform duration-300" />
-              </div>
-              <div className="p-6">
-                <h3 className="text-lg font-semibold mb-2 text-academic-text dark:text-white">🤝 ChinhoAI</h3>
-                <p className="text-academic-text-light dark:text-gray-300 text-sm mb-1">
-                  An ambitious attempt on real time Bangla to Bangla Sign Language Dual Translation. Finalist at GP Futuremakers, Runner up at Solvio AI Hackathon, and recognized at many more events.
-                </p>
-                <p className="text-academic-text-light dark:text-gray-300 text-sm mb-4">
-                  OpenCV, MediaPipe, Bangla ASR, Bangla TTS, Realtime Translation
-                </p>
-                <div className="flex flex-wrap gap-1.5 mb-4">
-                  <span className="skill-tag text-xs">Next.js</span>
-                  <span className="skill-tag text-xs">React</span>
-                  <span className="skill-tag text-xs">Framer Motion</span>
-                  <span className="skill-tag text-xs">Tailwind CSS</span>
-                </div>
-                <div className="flex items-center gap-3 text-sm">
-                  <a href="https://github.com/chottosid" target="_blank" rel="noopener noreferrer" className="project-link text-academic-primary hover:underline">Code</a>
-                  <span className="text-cream-400 dark:text-gray-600">•</span>
-                  <a href="#" className="project-link text-academic-primary hover:underline">Demo</a>
-                </div>
-              </div>
-            </div>
-
-            {/* Sticky Studio */}
-            <div className="bg-white dark:bg-gray-800 border border-cream-200 dark:border-gray-700 rounded-xl overflow-hidden card-hover shadow-sm">
-              <div className="overflow-hidden">
-                <img src="/sticky-studio.png" alt="Sticky Studio - Opportunity tracker" className="project-thumbnail hover:scale-105 transition-transform duration-300" />
-              </div>
-              <div className="p-6">
-                <h3 className="text-lg font-semibold mb-2 text-academic-text dark:text-white">💎 Sticky Studio</h3>
-                <p className="text-academic-text-light dark:text-gray-300 text-sm mb-1">
-                  Built this because I kept losing track of scholarship deadlines. Now it does it for me.
-                </p>
-                <p className="text-academic-text-light dark:text-gray-300 text-sm mb-4">
-                  Nothing fancy, just LangGraph and Next.js getting the job done.
-                </p>
-                <div className="flex flex-wrap gap-1.5 mb-4">
-                  <span className="skill-tag text-xs">Next.js</span>
-                  <span className="skill-tag text-xs">PostgreSQL</span>
-                  <span className="skill-tag text-xs">Gemini AI</span>
-                  <span className="skill-tag text-xs">Genkit</span>
-                </div>
-                <div className="flex items-center gap-3 text-sm">
-                  <a href="https://github.com/chottosid" target="_blank" rel="noopener noreferrer" className="project-link text-academic-primary hover:underline">Code</a>
-                  <span className="text-cream-400 dark:text-gray-600">•</span>
-                  <a href="#" className="project-link text-academic-primary hover:underline">Demo</a>
-                </div>
-              </div>
-            </div>
-
-            {/* IEEE VIP Cup */}
-            <div className="bg-white dark:bg-gray-800 border border-cream-200 dark:border-gray-700 rounded-xl overflow-hidden card-hover shadow-sm">
-              <div className="overflow-hidden">
-                <img src="/vip-cup.png" alt="IEEE VIP Cup - Computer vision project" className="project-thumbnail hover:scale-105 transition-transform duration-300" />
-              </div>
-              <div className="p-6">
-                <h3 className="text-lg font-semibold mb-2 text-academic-text dark:text-white">📹 IEEE VIP Cup 2025</h3>
-                <p className="text-academic-text-light dark:text-gray-300 text-sm mb-1">
-                  Drone vs. bird classification using RGB and infrared footage. Competition project.
-                </p>
-                <p className="text-academic-text-light dark:text-gray-300 text-sm mb-4">
-                  Built a robust dataset preprocessing pipeline with SAM and YOLO.
-                </p>
-                <div className="flex flex-wrap gap-1.5 mb-4">
-                  <span className="skill-tag text-xs">Python</span>
-                  <span className="skill-tag text-xs">PyTorch</span>
-                  <span className="skill-tag text-xs">YOLO</span>
-                  <span className="skill-tag text-xs">Computer Vision</span>
-                </div>
-                <div className="flex items-center gap-3 text-sm">
-                  <a href="https://github.com/chottosid" target="_blank" rel="noopener noreferrer" className="project-link text-academic-primary hover:underline">Code</a>
-                  <span className="text-cream-400 dark:text-gray-600">•</span>
-                  <a href="#" className="project-link text-academic-primary hover:underline">Demo</a>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      {/* Research Section */}
-      <section id="research" className="py-16 bg-cream-50 dark:bg-gray-800">
-        <div className="max-w-6xl mx-auto px-8">
-          <h2 className="text-3xl font-semibold text-center mb-12 text-academic-text dark:text-white">Research</h2>
-          <div className="space-y-6">
-            <div className="bg-white dark:bg-gray-900 border border-cream-200 dark:border-gray-700 rounded-xl p-6 card-hover">
-              <div className="flex justify-between items-start mb-2">
-                <h3 className="text-lg font-semibold text-academic-text dark:text-white">
-                  DDS-E-Sim: Simulating errors in DNA data storage
-                </h3>
-                <span className="status-badge accepted">Accepted • 2025</span>
-              </div>
-              <p className="text-sm text-academic-text-light dark:text-gray-400 mb-2">
-                Worked with Prof. A.B.M. Alim Al Islam at BUET.
+              <p className="text-sm text-ink-500 dark:text-ink-400 mt-0.5">
+                with Prof. A.B.M. Alim Al Islam, BUET
               </p>
-              <p className="text-xs text-academic-text-light dark:text-gray-500 mb-2">NeurIPS 2025 (FPI & SPIGM workshops)</p>
-              <a href="https://www.biorxiv.org/content/10.1101/2025.02.14.637785v2.full" className="text-sm text-academic-primary hover:underline">View paper</a>
-            </div>
-
-            <div className="bg-white dark:bg-gray-900 border border-cream-200 dark:border-gray-700 rounded-xl p-6 card-hover">
-              <div className="flex justify-between items-start mb-2">
-                <h3 className="text-lg font-semibold text-academic-text dark:text-white">
-                  Impact of Stain Normalization and Background Filtering on Deep Learning & Transformer based Models for Ovarian Cancer Histopathology Classification
-                </h3>
-                <span className="status-badge published">Published • 2025</span>
-              </div>
-              <p className="text-sm text-academic-text-light dark:text-gray-400 mb-2">
-                Independent research work.
+              <p className="text-sm text-ink-400 dark:text-ink-500 mt-0.5">
+                NeurIPS 2025 Workshop (FPI &amp; SPIGM)
               </p>
-              <p className="text-xs text-academic-text-light dark:text-gray-500 mb-2">ICCIT 2025</p>
-              <a href="#" className="text-sm text-academic-primary hover:underline">View paper</a>
+              <a href="https://www.biorxiv.org/content/10.1101/2025.02.14.637785v2.full" target="_blank" rel="noopener noreferrer" className="text-sm text-link dark:text-blue-400 hover:underline mt-1 inline-block">
+                Paper &rarr;
+              </a>
             </div>
 
-            <div className="bg-white dark:bg-gray-900 border border-cream-200 dark:border-gray-700 rounded-xl p-6 card-hover">
-              <div className="flex justify-between items-start mb-2">
-                <h3 className="text-lg font-semibold text-academic-text dark:text-white">Learning from imbalanced data</h3>
+            <div>
+              <div className="flex items-start justify-between gap-2">
+                <h3 className="font-serif font-semibold text-ink-800 dark:text-ink-100">
+                  Impact of Stain Normalization and Background Filtering on Deep Learning &amp; Transformer-based Models for Ovarian Cancer Histopathology Classification
+                </h3>
+                <span className="status-badge published">Published</span>
+              </div>
+              <p className="text-sm text-ink-400 dark:text-ink-500 mt-0.5">
+                ICCIT 2025
+              </p>
+              <a href="https://ieeexplore.ieee.org/document/11490333" target="_blank" rel="noopener noreferrer" className="text-sm text-link dark:text-blue-400 hover:underline mt-1 inline-block">
+                Paper &rarr;
+              </a>
+            </div>
+
+            <div>
+              <div className="flex items-start justify-between gap-2">
+                <h3 className="font-serif font-semibold text-ink-800 dark:text-ink-100">
+                  Dimensionality Driven Resampling
+                </h3>
                 <span className="status-badge in-progress">In Progress</span>
               </div>
-              <p className="text-sm text-academic-text-light dark:text-gray-400">
-                Ongoing thesis work with Prof. Sukarna Barua.
+              <p className="text-sm text-ink-500 dark:text-ink-400 mt-0.5">
+                with Prof. Sukarna Barua, BUET
+              </p>
+              <p className="text-sm text-ink-400 dark:text-ink-500 mt-0.5">
+                Novel dimensionality-driven resampling method for class imbalance. Manuscript in preparation.
               </p>
             </div>
 
-            <div className="bg-white dark:bg-gray-900 border border-cream-200 dark:border-gray-700 rounded-xl p-6 card-hover">
-              <div className="flex justify-between items-start mb-2">
-                <h3 className="text-lg font-semibold text-academic-text dark:text-white">Quantum ML explorations</h3>
+            <div>
+              <div className="flex items-start justify-between gap-2">
+                <h3 className="font-serif font-semibold text-ink-800 dark:text-ink-100">
+                  Drug Effects on EEG-based Epilepsy Prediction
+                </h3>
                 <span className="status-badge in-progress">In Progress</span>
               </div>
-              <p className="text-sm text-academic-text-light dark:text-gray-400">
-                Guided by Prof. Sohel Rahman.
+              <p className="text-sm text-ink-400 dark:text-ink-500 mt-0.5">
+                Investigating pharmacological interventions on EEG signal patterns for seizure prediction.
               </p>
             </div>
           </div>
-        </div>
-      </section>
+        </section>
 
-      {/* Education Section */}
-      <section id="education" className="py-16 dark:bg-gray-900">
-        <div className="max-w-6xl mx-auto px-8">
-          <h2 className="text-3xl font-semibold text-center mb-12 text-academic-text dark:text-white">Education</h2>
-          <div className="space-y-6">
-            <div className="bg-white dark:bg-gray-800 border-l-4 border-academic-primary p-6 rounded-r-lg shadow-sm">
-              <div className="flex justify-between items-start flex-wrap gap-2 mb-2">
-                <h3 className="text-lg font-semibold text-academic-text dark:text-white">
-                  Bangladesh University of Engineering and Technology (BUET)
-                </h3>
-                <span className="text-academic-text-light dark:text-gray-400">
-                  Jan 2022 - Present
-                </span>
+        {/* Experience */}
+        <section id="experience" className="mb-10">
+          <h2 className="text-lg font-bold section-rule">Experience</h2>
+          <div className="space-y-5">
+            <div>
+              <div className="flex justify-between items-start gap-2">
+                <div>
+                  <h3 className="font-semibold text-ink-800 dark:text-ink-100">Software Engineer (Part-Time)</h3>
+                  <p className="text-sm text-ink-500 dark:text-ink-400">PeriScaleAI</p>
+                </div>
+                <span className="text-sm text-ink-400 dark:text-ink-500 whitespace-nowrap">Oct 2025 &ndash; Feb 2026</span>
               </div>
-              <p className="text-academic-primary font-medium mb-2">
-                BSc in Computer Science and Engineering
-              </p>
-              <p className="text-academic-text-light dark:text-gray-400 text-sm">
-                CGPA: 3.59 (as of Level 4, Term 1)
-              </p>
+              <ul className="mt-2 space-y-1 text-sm text-ink-600 dark:text-ink-300 list-disc list-outside ml-4">
+                <li>Led development of a B2B AI-driven automatic content generation system for marketing and brand promotion</li>
+                <li>Designed multi-agent pipelines using <strong>LangGraph</strong> for orchestrating generation, refinement, and validation stages</li>
+                <li>Built distributed backend services using <strong>FastAPI</strong> with <strong>Celery/Redis-based</strong> task queues for scalable async execution</li>
+              </ul>
             </div>
           </div>
-        </div>
-      </section>
+        </section>
 
-      {/* Awards Section */}
-      <section id="awards" className="py-16 bg-cream-50 dark:bg-gray-800">
-        <div className="max-w-6xl mx-auto px-8">
-          <h2 className="text-3xl font-semibold text-center mb-12 text-academic-text dark:text-white">Achievements</h2>
-          <div className="space-y-6 max-w-4xl mx-auto">
-
-            {/* Tier 1: International Highlights */}
-            <div className="grid md:grid-cols-2 gap-4">
-              {/* IBCOL Silver Medal */}
-              <div className="bg-gradient-to-br from-slate-100 via-gray-50 to-slate-100 dark:from-gray-700 dark:via-gray-800 dark:to-gray-700 border-2 border-slate-300 dark:border-gray-600 p-5 rounded-xl shadow-md">
-                <div className="flex items-start gap-3">
-                  <span className="text-3xl">🥈</span>
-                  <div className="flex-1">
-                    <h3 className="text-base font-bold text-slate-700 dark:text-white">Silver Medal, International Blockchain Olympiad</h3>
-                    <p className="text-sm text-slate-600 dark:text-gray-300 mt-1">Represented Bangladesh • Hong Kong</p>
-                    <span className="inline-block mt-2 text-slate-600 dark:text-gray-300 font-semibold text-xs bg-slate-200 dark:bg-gray-600 px-2.5 py-1 rounded-full">2025</span>
-                  </div>
-                </div>
+        {/* Selected Projects */}
+        <section id="projects" className="mb-10">
+          <h2 className="text-lg font-bold section-rule">Selected Projects</h2>
+          <div className="space-y-4">
+            <div>
+              <div className="flex items-baseline gap-2">
+                <h3 className="font-semibold text-ink-800 dark:text-ink-100">Veritas</h3>
+                <span className="text-xs bg-ink-100 dark:bg-ink-700 text-ink-600 dark:text-ink-300 px-2 py-0.5 rounded">IBCOL 2025 Silver Medal</span>
               </div>
-
-              {/* APMO Honorable Mention */}
-              <div className="bg-gradient-to-br from-amber-50 via-orange-50 to-amber-50 dark:from-amber-900/30 dark:via-orange-900/30 dark:to-amber-900/30 border-2 border-amber-300 dark:border-amber-700 p-5 rounded-xl shadow-md">
-                <div className="flex items-start gap-3">
-                  <span className="text-3xl">🏅</span>
-                  <div className="flex-1">
-                    <h3 className="text-base font-bold text-amber-800 dark:text-amber-300">Honorable Mention, APMO</h3>
-                    <p className="text-sm text-amber-700 dark:text-amber-400 mt-1">Asian Pacific Mathematical Olympiad</p>
-                    <span className="inline-block mt-2 text-amber-700 dark:text-amber-400 font-semibold text-xs bg-amber-200 dark:bg-amber-800 px-2.5 py-1 rounded-full">2019</span>
-                  </div>
-                </div>
+              <p className="text-sm text-ink-500 dark:text-ink-400">Blockchain and AI-powered digital justice platform with public blockchain audit trails, IPFS evidence storage, and Solidity smart contracts.</p>
+              <div className="flex gap-3 mt-1 text-sm">
+                <a href="https://github.com/chottosid/Veritas" target="_blank" rel="noopener noreferrer" className="text-link dark:text-blue-400 hover:underline">GitHub</a>
+                <a href="https://www.youtube.com/watch?v=7kOzdRZQUZQ" target="_blank" rel="noopener noreferrer" className="text-link dark:text-blue-400 hover:underline">Demo</a>
               </div>
             </div>
 
-            {/* Tier 2: National Excellence */}
-            <div className="grid md:grid-cols-2 gap-4">
-              {/* IMO Training Camp */}
-              <div className="bg-white dark:bg-gray-900 border border-cream-300 dark:border-gray-700 p-4 rounded-xl shadow-sm">
-                <div className="flex items-start gap-3">
-                  <span className="text-2xl">📐</span>
-                  <div className="flex-1">
-                    <h3 className="text-sm font-semibold text-academic-text dark:text-white">IMO Training Camp</h3>
-                    <p className="text-xs text-academic-text-light dark:text-gray-400 mt-1">Selected for 3 consecutive years</p>
-                    <span className="inline-block mt-2 text-academic-text-light dark:text-gray-400 font-medium text-xs bg-cream-200 dark:bg-gray-700 px-2 py-0.5 rounded-full">2018–2020</span>
-                  </div>
-                </div>
-              </div>
-
-              {/* Bangladesh Blockchain Olympiad */}
-              <div className="bg-white dark:bg-gray-900 border border-cream-300 dark:border-gray-700 p-4 rounded-xl shadow-sm">
-                <div className="flex items-start gap-3">
-                  <span className="text-2xl">🔗</span>
-                  <div className="flex-1">
-                    <h3 className="text-sm font-semibold text-academic-text dark:text-white">Finalist, Bangladesh Blockchain Olympiad</h3>
-                    <p className="text-xs text-academic-text-light dark:text-gray-400 mt-1">National level competition</p>
-                    <span className="inline-block mt-2 text-academic-text-light dark:text-gray-400 font-medium text-xs bg-cream-200 dark:bg-gray-700 px-2 py-0.5 rounded-full">2023</span>
-                  </div>
-                </div>
+            <div>
+              <h3 className="font-semibold text-ink-800 dark:text-ink-100">Cognitia</h3>
+              <p className="text-sm text-ink-500 dark:text-ink-400">AI-powered study platform for BUET students with LLM-driven content generation pipelines. Backend and AI services deployed on Azure.</p>
+              <div className="flex gap-3 mt-1 text-sm">
+                <a href="https://github.com/chottosid/Cognitia-Backend" target="_blank" rel="noopener noreferrer" className="text-link dark:text-blue-400 hover:underline">GitHub (Backend)</a>
+                <a href="https://github.com/chottosid/Cognitia-AI" target="_blank" rel="noopener noreferrer" className="text-link dark:text-blue-400 hover:underline">GitHub (AI)</a>
               </div>
             </div>
 
-            {/* Tier 3: Other Notable */}
-            <div className="grid grid-cols-1 sm:grid-cols-3 gap-3">
-              <div className="bg-white/50 dark:bg-gray-900/50 border border-cream-200 dark:border-gray-700 p-3 rounded-lg text-center">
-                <p className="text-sm font-medium text-academic-text dark:text-white">3rd Place</p>
-                <p className="text-xs text-academic-text-light dark:text-gray-400 mt-0.5">BUET CSE Fest Hackathon</p>
-                <p className="text-xs text-academic-text-light dark:text-gray-500">2023</p>
+            <div>
+              <div className="flex items-baseline gap-2">
+                <h3 className="font-semibold text-ink-800 dark:text-ink-100">ChinhoAI</h3>
+                <span className="text-xs bg-ink-100 dark:bg-ink-700 text-ink-600 dark:text-ink-300 px-2 py-0.5 rounded">GP FutureMakers Finalist</span>
               </div>
-              <div className="bg-white/50 dark:bg-gray-900/50 border border-cream-200 dark:border-gray-700 p-3 rounded-lg text-center">
-                <p className="text-sm font-medium text-academic-text dark:text-white">Finalist (2x)</p>
-                <p className="text-xs text-academic-text-light dark:text-gray-400 mt-0.5">Therap JavaFest</p>
-                <p className="text-xs text-academic-text-light dark:text-gray-500">2023, 2024</p>
-              </div>
-              <div className="bg-white/50 dark:bg-gray-900/50 border border-cream-200 dark:border-gray-700 p-3 rounded-lg text-center">
-                <p className="text-sm font-medium text-academic-text dark:text-white">13th Place</p>
-                <p className="text-xs text-academic-text-light dark:text-gray-400 mt-0.5">SEC Inter-Uni Junior PC</p>
-                <p className="text-xs text-academic-text-light dark:text-gray-500">2023</p>
+              <p className="text-sm text-ink-500 dark:text-ink-400">Real-time Bangla to Bangla Sign Language dual translation using OpenCV, MediaPipe, and keypoint-based gesture representations.</p>
+              <div className="flex gap-3 mt-1 text-sm">
+                <a href="https://github.com/chottosid" target="_blank" rel="noopener noreferrer" className="text-link dark:text-blue-400 hover:underline">GitHub</a>
+                <a href="https://www.youtube.com/watch?v=HVnktPIUuyc&t=209s" target="_blank" rel="noopener noreferrer" className="text-link dark:text-blue-400 hover:underline">Video</a>
               </div>
             </div>
 
+            <div>
+              <h3 className="font-semibold text-ink-800 dark:text-ink-100">ScrappyBuddy</h3>
+              <p className="text-sm text-ink-500 dark:text-ink-400">LangGraph-orchestrated agent extracting semantic content signals from unstructured sources with NLP-based change detection. Built with FastAPI, Celery/Redis, and Google Gemini.</p>
+              <div className="flex gap-3 mt-1 text-sm">
+                <a href="https://github.com/chottosid/ScrappyBuddy" target="_blank" rel="noopener noreferrer" className="text-link dark:text-blue-400 hover:underline">GitHub</a>
+              </div>
+            </div>
+
+            <div>
+              <h3 className="font-semibold text-ink-800 dark:text-ink-100">Shohochori</h3>
+              <p className="text-sm text-ink-500 dark:text-ink-400">Social and wellness platform for elderly users with accessibility-focused React frontend and Spring Boot microservice backend.</p>
+              <div className="flex gap-3 mt-1 text-sm">
+                <a href="https://github.com/chottosid/Shohochori-Frontend" target="_blank" rel="noopener noreferrer" className="text-link dark:text-blue-400 hover:underline">GitHub (Frontend)</a>
+                <a href="https://github.com/chottosid/Shohochor_Bondhu" target="_blank" rel="noopener noreferrer" className="text-link dark:text-blue-400 hover:underline">GitHub (Backend)</a>
+              </div>
+            </div>
+
+            <div>
+              <h3 className="font-semibold text-ink-800 dark:text-ink-100">AxleCar</h3>
+              <p className="text-sm text-ink-500 dark:text-ink-400">Gesture-controlled robotic vehicle using ATmega32 with gyroscope input and ESP32-CAM for wireless video streaming.</p>
+            </div>
+
+            <div>
+              <h3 className="font-semibold text-ink-800 dark:text-ink-100">Woodland Escapade</h3>
+              <p className="text-sm text-ink-500 dark:text-ink-400">Multi-stage first-person shooter game built with raw OpenGL in C, featuring enemy interaction, physics, and stage progression.</p>
+              <div className="flex gap-3 mt-1 text-sm">
+                <a href="https://github.com/chottosid/Woodland-Escapade" target="_blank" rel="noopener noreferrer" className="text-link dark:text-blue-400 hover:underline">GitHub</a>
+              </div>
+            </div>
+
+            <div>
+              <h3 className="font-semibold text-ink-800 dark:text-ink-100">Kothin Trains</h3>
+              <p className="text-sm text-ink-500 dark:text-ink-400">Train ticketing platform with seat selection, scheduling, and booking. Django backend with raw SQL query layer.</p>
+              <div className="flex gap-3 mt-1 text-sm">
+                <a href="https://github.com/chottosid/Kothin-Trains" target="_blank" rel="noopener noreferrer" className="text-link dark:text-blue-400 hover:underline">GitHub</a>
+              </div>
+            </div>
+
+            <div>
+              <h3 className="font-semibold text-ink-800 dark:text-ink-100">Network Security Toolkit</h3>
+              <p className="text-sm text-ink-500 dark:text-ink-400">Packet-level network tools in C++ and Python for packet flooding and ICMP fragmentation attacks using raw sockets and Scapy.</p>
+              <div className="flex gap-3 mt-1 text-sm">
+                <a href="https://github.com/chottosid/CSE406-Project" target="_blank" rel="noopener noreferrer" className="text-link dark:text-blue-400 hover:underline">GitHub</a>
+              </div>
+            </div>
+
+            <div>
+              <h3 className="font-semibold text-ink-800 dark:text-ink-100">Compiler</h3>
+              <p className="text-sm text-ink-500 dark:text-ink-400">Early-stage compiler for C-like syntax with separate lexical analyzer, parser, and code generator.</p>
+              <div className="flex gap-3 mt-1 text-sm">
+                <a href="https://github.com/chottosid/CSE-310---Compiler-Sessional" target="_blank" rel="noopener noreferrer" className="text-link dark:text-blue-400 hover:underline">GitHub</a>
+              </div>
+            </div>
           </div>
-        </div>
-      </section>
+        </section>
 
-      {/* Contact Section */}
-      <section id="contact" className="py-16 dark:bg-gray-900">
-        <div className="max-w-4xl mx-auto px-8">
-          <h2 className="text-3xl font-semibold text-center mb-12 text-academic-text dark:text-white">Let&apos;s Talk</h2>
-          <div className="text-center">
-            <p className="text-academic-text-light dark:text-gray-300 mb-8 max-w-2xl mx-auto">
-              Got a project in mind? Or just want to chat about code, blockchain, or classical music? Drop me a line.
+        {/* Education */}
+        <section id="education" className="mb-10">
+          <h2 className="text-lg font-bold section-rule">Education</h2>
+          <div>
+            <div className="flex justify-between items-start gap-2">
+              <h3 className="font-semibold text-ink-800 dark:text-ink-100">Bangladesh University of Engineering and Technology (BUET)</h3>
+              <span className="text-sm text-ink-400 dark:text-ink-500 whitespace-nowrap">Jan 2022 &ndash; May 2026</span>
+            </div>
+            <p className="text-sm text-ink-500 dark:text-ink-400">Bachelor of Science in Computer Science and Engineering</p>
+            <p className="text-sm text-ink-500 dark:text-ink-400">CGPA: 3.59 / 4.00</p>
+            <p className="text-sm text-ink-400 dark:text-ink-500 mt-1">
+              Relevant Coursework: Algorithms, Data Structures, Graph Theory, Machine Learning, Artificial Intelligence, Operating Systems, Compilers
             </p>
-            <div className="flex flex-col sm:flex-row justify-center gap-4 mb-8">
-              <a
-                href="mailto:swarupsidhartho@gmail.com"
-                className="inline-flex items-center gap-2 bg-academic-primary text-white px-6 py-3 rounded-lg font-medium transition-all hover:bg-academic-secondary hover:-translate-y-0.5"
-              >
-                📧 Email me
-              </a>
-              <button
-                onClick={copyEmail}
-                className="inline-flex items-center gap-2 bg-transparent text-academic-primary dark:text-academic-primary border border-academic-primary px-6 py-3 rounded-lg font-medium transition-all hover:bg-academic-primary hover:text-white"
-              >
-                {copied ? "✓ Copied!" : "📋 Copy email"}
-              </button>
-              <a
-                href="/resume.pdf"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="inline-flex items-center gap-2 bg-transparent text-academic-primary dark:text-academic-primary border border-academic-primary px-6 py-3 rounded-lg font-medium transition-all hover:bg-academic-primary hover:text-white"
-              >
-                📄 Resume
-              </a>
+          </div>
+        </section>
+
+        {/* Awards */}
+        <section id="awards" className="mb-10">
+          <h2 className="text-lg font-bold section-rule">Awards</h2>
+          <ul className="space-y-1.5 text-sm text-ink-600 dark:text-ink-300">
+            <li className="flex justify-between gap-4"><span className="font-medium text-ink-800 dark:text-ink-100">Silver Medalist, International Blockchain Olympiad</span> <span className="text-ink-400 dark:text-ink-500 whitespace-nowrap">2025</span></li>
+            <li className="flex justify-between gap-4"><span className="font-medium text-ink-800 dark:text-ink-100">Honorable Mention, Asia Pacific Mathematical Olympiad (APMO)</span> <span className="text-ink-400 dark:text-ink-500 whitespace-nowrap">2019</span></li>
+            <li className="flex justify-between gap-4"><span className="font-medium text-ink-800 dark:text-ink-100">IMO Training Camp</span> <span className="text-ink-400 dark:text-ink-500 whitespace-nowrap">2018&ndash;2020</span></li>
+            <li className="flex justify-between gap-4"><span>Finalist, Innovation World Cup</span> <span className="text-ink-400 dark:text-ink-500 whitespace-nowrap">2025</span></li>
+            <li className="flex justify-between gap-4"><span>Global Top 100, Reply AI Agents Challenge (out of 2000+ teams)</span> <span className="text-ink-400 dark:text-ink-500 whitespace-nowrap">2026</span></li>
+            <li className="flex justify-between gap-4"><span>Finalist, GP FutureMakers</span> <span className="text-ink-400 dark:text-ink-500 whitespace-nowrap">2026</span></li>
+            <li className="flex justify-between gap-4"><span>Top 50, Solvio AI Hackathon</span> <span className="text-ink-400 dark:text-ink-500 whitespace-nowrap">2026</span></li>
+            <li className="flex justify-between gap-4"><span>Finalist, Bangladesh Blockchain Olympiad</span> <span className="text-ink-400 dark:text-ink-500 whitespace-nowrap">2023</span></li>
+            <li className="flex justify-between gap-4"><span>3rd Place, BUET CSE Fest Hackathon &mdash; Blockchain Category</span> <span className="text-ink-400 dark:text-ink-500 whitespace-nowrap">2023</span></li>
+            <li className="flex justify-between gap-4"><span>Finalist, Therap JavaFest</span> <span className="text-ink-400 dark:text-ink-500 whitespace-nowrap">2023, 2024</span></li>
+          </ul>
+        </section>
+
+        {/* Skills */}
+        <section id="skills" className="mb-10">
+          <h2 className="text-lg font-bold section-rule">Skills</h2>
+          <dl className="space-y-2 text-sm">
+            <div className="flex gap-2">
+              <dt className="font-medium text-ink-700 dark:text-ink-200 whitespace-nowrap">ML &amp; AI:</dt>
+              <dd className="text-ink-500 dark:text-ink-400">PyTorch, Transformers, Computer Vision, NLP, Generative Modeling</dd>
             </div>
-            <div className="flex justify-center gap-6">
-              <a
-                href="https://www.linkedin.com/in/swarup-sidhartho-mondol-032b90257/"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="text-academic-text-light dark:text-gray-400 font-medium hover:text-academic-primary dark:hover:text-academic-primary transition-colors"
-              >
-                LinkedIn
-              </a>
-              <a
-                href="https://github.com/chottosid"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="text-academic-text-light dark:text-gray-400 font-medium hover:text-academic-primary dark:hover:text-academic-primary transition-colors"
-              >
-                GitHub
-              </a>
-              <a
-                href="https://www.facebook.com/fatmathman"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="text-academic-text-light dark:text-gray-400 font-medium hover:text-academic-primary dark:hover:text-academic-primary transition-colors"
-              >
-                Facebook
-              </a>
+            <div className="flex gap-2">
+              <dt className="font-medium text-ink-700 dark:text-ink-200 whitespace-nowrap">Agentic &amp; LLM:</dt>
+              <dd className="text-ink-500 dark:text-ink-400">LangChain, LangGraph</dd>
+            </div>
+            <div className="flex gap-2">
+              <dt className="font-medium text-ink-700 dark:text-ink-200 whitespace-nowrap">Programming:</dt>
+              <dd className="text-ink-500 dark:text-ink-400">Python, C, C++, Java, JavaScript</dd>
+            </div>
+            <div className="flex gap-2">
+              <dt className="font-medium text-ink-700 dark:text-ink-200 whitespace-nowrap">Backend:</dt>
+              <dd className="text-ink-500 dark:text-ink-400">FastAPI, Django, Node.js, Spring Boot</dd>
+            </div>
+            <div className="flex gap-2">
+              <dt className="font-medium text-ink-700 dark:text-ink-200 whitespace-nowrap">Frontend:</dt>
+              <dd className="text-ink-500 dark:text-ink-400">React.js, Next.js</dd>
+            </div>
+            <div className="flex gap-2">
+              <dt className="font-medium text-ink-700 dark:text-ink-200 whitespace-nowrap">Blockchain:</dt>
+              <dd className="text-ink-500 dark:text-ink-400">Solidity, Ethereum, Smart Contracts, Hardhat, Ethers.js</dd>
+            </div>
+          </dl>
+        </section>
+
+        {/* Footer */}
+        <footer className="pt-8 border-t border-ink-200 dark:border-ink-700 text-sm text-ink-400 dark:text-ink-500">
+          <div className="flex flex-col sm:flex-row justify-between items-start sm:items-center gap-2">
+            <p>&copy; 2025 Swarup Sidhartho Mondol</p>
+            <div className="flex gap-4">
+              <a href="mailto:swarupsidhartho@gmail.com" className="hover:text-ink-600 dark:hover:text-ink-300 transition-colors">Email</a>
+              <a href="https://github.com/chottosid" target="_blank" rel="noopener noreferrer" className="hover:text-ink-600 dark:hover:text-ink-300 transition-colors">GitHub</a>
+              <a href="https://www.linkedin.com/in/swarup-sidhartho-mondol-032b90257/" target="_blank" rel="noopener noreferrer" className="hover:text-ink-600 dark:hover:text-ink-300 transition-colors">LinkedIn</a>
             </div>
           </div>
-        </div>
-      </section>
-
-      {/* Footer */}
-      <footer className="bg-cream-50 dark:bg-gray-800 border-t border-cream-200 dark:border-gray-700 py-8 text-center">
-        <div className="max-w-6xl mx-auto px-8">
-          <p className="text-academic-text-light dark:text-gray-400 text-sm">
-            © 2025 Swarup Sidhartho Mondol
-          </p>
-        </div>
-      </footer>
+        </footer>
+      </div>
     </main>
   );
 }

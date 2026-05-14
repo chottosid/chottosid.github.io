@@ -9,29 +9,27 @@ module.exports = {
   theme: {
     extend: {
       colors: {
-        cream: {
-          50: "#fefcff",
-          100: "#faf8fc",
-          200: "#f5f3f8",
-          300: "#f0eef4",
-          400: "#e8e5ed",
-          500: "#ddd9e2",
-          600: "#c4bfc9",
-          700: "#a69fa8",
-          800: "#837c85",
-          900: "#6b646d",
+        ink: {
+          50: "#f8f9fa",
+          100: "#f1f3f5",
+          200: "#e9ecef",
+          300: "#dee2e6",
+          400: "#adb5bd",
+          500: "#6c757d",
+          600: "#495057",
+          700: "#343a40",
+          800: "#212529",
+          900: "#0a0a0a",
         },
-        academic: {
-          primary: "#6366f1",
-          secondary: "#8b5cf6",
-          accent: "#a855f7",
-          text: "#2d3748",
-          "text-light": "#718096",
-        },
+        link: "#1a5276",
       },
       fontFamily: {
-        inter: ["Inter", "system-ui", "sans-serif"],
+        sans: ["Inter", "system-ui", "sans-serif"],
+        serif: ["Georgia", "Cambria", "serif"],
         mono: ["JetBrains Mono", "monospace"],
+      },
+      maxWidth: {
+        content: "720px",
       },
     },
   },
