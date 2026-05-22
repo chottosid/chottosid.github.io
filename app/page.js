@@ -118,7 +118,7 @@ export default function Home() {
             <img
               src="/portrait.jpg"
               alt="Swarup Sidhartho Mondol"
-              className="w-20 h-20 rounded-full object-cover flex-shrink-0"
+              className="w-20 h-20 rounded-full object-cover flex-shrink-0 transition-transform duration-300 ease-out hover:scale-150 hover:shadow-lg cursor-pointer"
             />
             <div>
               <h1 className="text-2xl font-bold text-ink-900 dark:text-white">Swarup Sidhartho Mondol</h1>
