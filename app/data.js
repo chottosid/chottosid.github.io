@@ -156,6 +156,7 @@ export const awards = [
   { title: "Silver Medalist, International Blockchain Olympiad", year: "2025", highlight: true },
   { title: "Honorable Mention, Asia Pacific Mathematical Olympiad (APMO)", year: "2019", highlight: true },
   { title: "IMO Training Camp", year: "2018–2020", highlight: true },
+  { title: "Academic Team Member, Bangladesh Mathematical Olympiad", year: "2022–Present", highlight: true },
   { title: "Finalist, Innovation World Cup", year: "2025" },
   { title: "Global Top 100, Reply AI Agents Challenge (out of 2000+ teams)", year: "2026" },
   { title: "Finalist, GP FutureMakers", year: "2026" },
