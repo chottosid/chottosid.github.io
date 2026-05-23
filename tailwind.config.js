@@ -26,10 +26,6 @@ module.exports = {
       fontFamily: {
         sans: ["Inter", "system-ui", "sans-serif"],
         serif: ["Georgia", "Cambria", "serif"],
-        mono: ["JetBrains Mono", "monospace"],
-      },
-      maxWidth: {
-        content: "720px",
       },
     },
   },

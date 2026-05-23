@@ -3,20 +3,20 @@ import "./globals.css";
 export const metadata = {
   title: "Swarup Sidhartho Mondol | Software Engineer & Researcher at BUET",
   description:
-    "Final-year CSE student at BUET. I build full-stack apps, blockchain backends, and ML tools. Champion at International Blockchain Olympiad 2025. Research in DNA data storage and quantum ML.",
+    "Final-year CSE student at BUET. I build full-stack apps, blockchain backends, and ML tools. Silver Medalist at International Blockchain Olympiad 2025. Research in DNA data storage and medical imaging.",
   keywords:
     "Swarup Sidhartho Mondol, BUET CSE, software engineer, blockchain developer, machine learning, NeurIPS, International Blockchain Olympiad, full-stack developer, Bangladesh, Web3, Solidity, Next.js, Python",
   authors: [{ name: "Swarup Sidhartho Mondol" }],
   creator: "Swarup Sidhartho Mondol",
-  metadataBase: new URL("https://chottosid.github.io"),
+  metadataBase: new URL("https://swarupsidhartho.xyz"),
   alternates: {
     canonical: "/",
   },
   openGraph: {
     title: "Swarup Sidhartho Mondol | Software Engineer & Researcher",
     description:
-      "Final-year CSE student at BUET building full-stack apps, blockchain backends, and ML tools. Champion at International Blockchain Olympiad 2025.",
-    url: "https://chottosid.github.io",
+      "Final-year CSE student at BUET building full-stack apps, blockchain backends, and ML tools. Silver Medalist at International Blockchain Olympiad 2025.",
+    url: "https://swarupsidhartho.xyz",
     siteName: "Swarup Sidhartho Mondol",
     locale: "en_US",
     type: "website",
@@ -33,7 +33,7 @@ export const metadata = {
     card: "summary",
     title: "Swarup Sidhartho Mondol | Software Engineer & Researcher",
     description:
-      "Final-year CSE at BUET. Full-stack, blockchain, ML. IBO 2025 Champion.",
+      "Final-year CSE at BUET. Full-stack, blockchain, ML. IBO 2025 Silver Medalist.",
     images: ["/portrait.jpg"],
   },
   robots: {
@@ -51,8 +51,8 @@ const jsonLd = {
   "@context": "https://schema.org",
   "@type": "Person",
   name: "Swarup Sidhartho Mondol",
-  url: "https://chottosid.github.io",
-  image: "https://chottosid.github.io/portrait.jpg",
+  url: "https://swarupsidhartho.xyz",
+  image: "https://swarupsidhartho.xyz/portrait.jpg",
   jobTitle: "Software Engineer & Researcher",
   worksFor: {
     "@type": "EducationalOrganization",
@@ -80,7 +80,6 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en">
       <head>
-        <link rel="icon" href="/favicon.ico" sizes="any" />
         <link rel="preconnect" href="https://fonts.googleapis.com" />
         <link
           rel="preconnect"
@@ -88,12 +87,17 @@ export default function RootLayout({ children }) {
           crossOrigin="true"
         />
         <link
-          href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=JetBrains+Mono:wght@400;500&display=swap"
+          href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&display=swap"
           rel="stylesheet"
         />
         <script
           type="application/ld+json"
           dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
+        />
+        <script
+          dangerouslySetInnerHTML={{
+            __html: `try{var d=document.documentElement;var t=localStorage.getItem('darkMode');if(t!==null?JSON.parse(t):window.matchMedia('(prefers-color-scheme:dark)').matches){d.classList.add('dark')}}catch(e){}`,
+          }}
         />
       </head>
       <body>{children}</body>
