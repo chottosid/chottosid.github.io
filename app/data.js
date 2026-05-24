@@ -148,7 +148,6 @@ export const education = {
   institution: "Bangladesh University of Engineering and Technology (BUET)",
   period: "Jan 2022 – May 2026",
   degree: "Bachelor of Science in Computer Science and Engineering",
-  cgpa: "3.59 / 4.00",
   coursework: "Algorithms, Data Structures, Graph Theory, Machine Learning, Artificial Intelligence, Operating Systems, Compilers",
 };
 

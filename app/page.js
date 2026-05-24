@@ -151,7 +151,6 @@ export default function Home() {
               <span className="text-sm text-ink-400 dark:text-ink-500 whitespace-nowrap">{education.period}</span>
             </div>
             <p className="text-sm text-ink-500 dark:text-ink-400">{education.degree}</p>
-            <p className="text-sm text-ink-500 dark:text-ink-400">CGPA: {education.cgpa}</p>
             <p className="text-sm text-ink-400 dark:text-ink-500 mt-1">
               Relevant Coursework: {education.coursework}
             </p>
