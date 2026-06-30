@@ -43,10 +43,10 @@ export const research = [
     },
   },
   {
-    title: "Dimensionality Driven Resampling",
+    title: "Dimensionality Driven Oversampling",
     status: "in-progress",
     collaborators: "with Prof. Sukarna Barua, BUET",
-    description: "Novel dimensionality-driven resampling method for class imbalance. Manuscript in preparation.",
+    description: "Novel dimensionality-driven oversampling method leveraging dimensional geometry for minority class synthesis under class imbalance. Manuscript in preparation.",
   },
   {
     title: "Drug Effects on EEG-based Epilepsy Prediction",
@@ -61,9 +61,9 @@ export const experience = [
     company: "PeriScaleAI",
     period: "Oct 2025 – Feb 2026",
     bullets: [
-      "Led development of a B2B AI-driven automatic content generation system for marketing and brand promotion",
-      "Designed multi-agent pipelines using LangGraph for orchestrating generation, refinement, and validation stages",
-      "Built distributed backend services using FastAPI with Celery/Redis-based task queues for scalable async execution",
+      "Led development of an AI-driven content generation platform that produced brand-specific images, videos, blog posts, and social media content, integrated with a CRM for automated customer engagement across WhatsApp and LinkedIn",
+      "Designed multi-agent pipelines using LangGraph to orchestrate content generation, review, and validation stages with stateful execution and failure recovery",
+      "Built distributed backend services using FastAPI with Celery/Redis-based task queues for scalable async execution and integration with external APIs and AI services",
     ],
   },
 ];
@@ -137,7 +137,7 @@ export const projects = [
   },
   {
     name: "Compiler",
-    description: "Early-stage compiler for C-like syntax with separate lexical analyzer, parser, and code generator.",
+    description: "Compiler for a C-like grammar targeting 8086 assembly output, with a flex-based lexical analyzer, a Bison LALR(1) parser with semantic actions and error recovery, and a code generator with type-aware expression evaluation and scoped symbol table management.",
     links: [
       { url: "https://github.com/chottosid/CSE-310---Compiler-Sessional", label: "GitHub" },
     ],
@@ -146,7 +146,7 @@ export const projects = [
 
 export const education = {
   institution: "Bangladesh University of Engineering and Technology (BUET)",
-  period: "Jan 2022 – May 2026",
+  period: "Jan 2022 – Jun 2026",
   degree: "Bachelor of Science in Computer Science and Engineering",
   coursework: "Algorithms, Data Structures, Graph Theory, Machine Learning, Artificial Intelligence, Operating Systems, Compilers",
 };
@@ -154,12 +154,13 @@ export const education = {
 export const awards = [
   { title: "Silver Medalist, International Blockchain Olympiad", year: "2025", highlight: true },
   { title: "Honorable Mention, Asia Pacific Mathematical Olympiad (APMO)", year: "2019", highlight: true },
-  { title: "IMO Training Camp", year: "2018–2020", highlight: true },
+  { title: "International Mathematical Olympiad (IMO) Training Camp", year: "2016–2020", highlight: true },
+  { title: "Sir Fazle Hasan Abed Scholar, BRAC University", year: "2021" },
   { title: "Academic Team Member, Bangladesh Mathematical Olympiad", year: "2022–Present", highlight: true },
-  { title: "Finalist, Innovation World Cup", year: "2025" },
   { title: "Global Top 100, Reply AI Agents Challenge (out of 2000+ teams)", year: "2026" },
-  { title: "Finalist, GP FutureMakers", year: "2026" },
-  { title: "Top 50, Solvio AI Hackathon", year: "2026" },
+  { title: "Finalist, Innovation World Cup", year: "2025" },
+  { title: "Finalist, GP FutureMakers", year: "2025" },
+  { title: "Top 50, Solvio AI Hackathon", year: "2025" },
   { title: "Finalist, Bangladesh Blockchain Olympiad", year: "2023" },
   { title: "3rd Place, BUET CSE Fest Hackathon — Blockchain Category", year: "2023" },
   { title: "Finalist, Therap JavaFest", year: "2023, 2024" },
@@ -167,9 +168,12 @@ export const awards = [
 
 export const skills = [
   { category: "ML & AI", items: "PyTorch, Transformers, Computer Vision, NLP, Generative Modeling" },
+  { category: "Data & Scientific Computing", items: "Pandas, SciPy" },
   { category: "Agentic & LLM", items: "LangChain, LangGraph" },
   { category: "Programming", items: "Python, C, C++, Java, JavaScript" },
-  { category: "Backend", items: "FastAPI, Django, Node.js, Spring Boot" },
+  { category: "Backend & Systems", items: "FastAPI, Django, Node.js, Spring Boot" },
+  { category: "Databases & Infra", items: "PostgreSQL, MongoDB, Redis, Docker, NGINX" },
   { category: "Frontend", items: "React.js, Next.js" },
-  { category: "Blockchain", items: "Solidity, Ethereum, Smart Contracts, Hardhat, Ethers.js" },
+  { category: "Web Scraping & Automation", items: "Selenium, BeautifulSoup, Playwright" },
+  { category: "Blockchain & Web3", items: "Solidity, Ethereum, Smart Contracts, Hardhat, Ethers.js" },
 ];

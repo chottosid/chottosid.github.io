@@ -1,9 +1,9 @@
 import "./globals.css";
 
 export const metadata = {
-  title: "Swarup Sidhartho Mondol | Software Engineer & Researcher at BUET",
+  title: "Swarup Sidhartho Mondol | Software Engineer & Researcher",
   description:
-    "Final-year CSE student at BUET. I build full-stack apps, blockchain backends, and ML tools. Silver Medalist at International Blockchain Olympiad 2025. Research in DNA data storage and medical imaging.",
+    "Software Engineer and CSE graduate of BUET (2026). I build backend systems, AI-powered applications, and multi-agent pipelines. Silver Medalist at International Blockchain Olympiad 2025. Published research in DNA data storage and medical imaging.",
   keywords:
     "Swarup Sidhartho Mondol, BUET CSE, software engineer, blockchain developer, machine learning, NeurIPS, International Blockchain Olympiad, full-stack developer, Bangladesh, Web3, Solidity, Next.js, Python",
   authors: [{ name: "Swarup Sidhartho Mondol" }],
@@ -15,7 +15,7 @@ export const metadata = {
   openGraph: {
     title: "Swarup Sidhartho Mondol | Software Engineer & Researcher",
     description:
-      "Final-year CSE student at BUET building full-stack apps, blockchain backends, and ML tools. Silver Medalist at International Blockchain Olympiad 2025.",
+      "Software Engineer and CSE graduate of BUET building backend systems, AI-powered applications, and multi-agent pipelines. Silver Medalist at International Blockchain Olympiad 2025.",
     url: "https://swarupsidhartho.xyz",
     siteName: "Swarup Sidhartho Mondol",
     locale: "en_US",
@@ -33,7 +33,7 @@ export const metadata = {
     card: "summary",
     title: "Swarup Sidhartho Mondol | Software Engineer & Researcher",
     description:
-      "Final-year CSE at BUET. Full-stack, blockchain, ML. IBO 2025 Silver Medalist.",
+      "Software Engineer & CSE graduate of BUET. Backend, AI/ML, multi-agent systems. IBO 2025 Silver Medalist.",
     images: ["/portrait.jpg"],
   },
   robots: {
