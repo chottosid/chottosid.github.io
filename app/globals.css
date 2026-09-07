@@ -33,4 +33,8 @@
   .status-badge.in-progress {
     @apply bg-amber-100 text-amber-700 dark:bg-amber-900/40 dark:text-amber-400;
   }
+
+  .status-badge.under-review {
+    @apply bg-purple-100 text-purple-700 dark:bg-purple-900/40 dark:text-purple-400;
+  }
 }

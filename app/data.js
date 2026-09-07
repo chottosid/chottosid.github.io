@@ -27,7 +27,7 @@ export const research = [
     title: "DDS-E-Sim: A Transformer-based Probabilistic Generative Framework for Simulating Error-Prone DNA Sequences for DNA Data Storage",
     status: "accepted",
     collaborators: "with Prof. A.B.M. Alim Al Islam, BUET",
-    venue: "NeurIPS 2025 Workshop (FPI & SPIGM)",
+    venue: "NeurIPS 2025 Workshops (FPI & SPIGM)",
     link: {
       url: "https://www.biorxiv.org/content/10.1101/2025.02.14.637785v2.full",
       label: "Paper",
@@ -43,10 +43,10 @@ export const research = [
     },
   },
   {
-    title: "Dimensionality Driven Oversampling",
-    status: "in-progress",
+    title: "DMOTE: Dimensionality-Driven Minority Oversampling Techniques for Imbalanced Learning",
+    status: "under-review",
     collaborators: "with Prof. Sukarna Barua, BUET",
-    description: "Novel dimensionality-driven oversampling method leveraging dimensional geometry for minority class synthesis under class imbalance. Manuscript in preparation.",
+    description: "Novel dimensionality-driven oversampling method leveraging dimensional geometry for minority class synthesis under class imbalance.",
   },
   {
     title: "Drug Effects on EEG-based Epilepsy Prediction",
@@ -56,6 +56,16 @@ export const research = [
 ];
 
 export const experience = [
+  {
+    role: "Machine Learning Engineering Expert",
+    company: "BUET",
+    period: "Jul 2026 – Present",
+    bullets: [
+      "Building an AI-enabled system for evaluating, correcting, and modifying architectural and structural drawings against the Bangladesh National Building Code",
+      "Building a document-processing pipeline that transforms the building code into structured, machine-readable data",
+      "Developing a compliance-checking system that detects code violations in architectural diagrams and retrieves the relevant regulatory provisions",
+    ],
+  },
   {
     role: "Software Engineer (Part-Time)",
     company: "PeriScaleAI",
@@ -73,17 +83,10 @@ export const projects = [
     name: "Veritas",
     badge: "IBCOL 2025 Silver Medal",
     description: "Blockchain and AI-powered digital justice platform with public blockchain audit trails, IPFS evidence storage, and Solidity smart contracts.",
+    image: "/projects/veritas.png",
     links: [
       { url: "https://github.com/chottosid/Veritas", label: "GitHub" },
       { url: "https://www.youtube.com/watch?v=7kOzdRZQUZQ", label: "Demo" },
-    ],
-  },
-  {
-    name: "Cognitia",
-    description: "AI-powered study platform for BUET students with LLM-driven content generation pipelines. Backend and AI services deployed on Azure.",
-    links: [
-      { url: "https://github.com/chottosid/Cognitia-Backend", label: "GitHub (Backend)" },
-      { url: "https://github.com/chottosid/Cognitia-AI", label: "GitHub (AI)" },
     ],
   },
   {
@@ -103,16 +106,12 @@ export const projects = [
     ],
   },
   {
-    name: "Shohochori",
-    description: "Social and wellness platform for elderly users with accessibility-focused React frontend and Spring Boot microservice backend.",
+    name: "Cognitia",
+    description: "AI-powered study platform for BUET students with LLM-driven content generation pipelines. Backend and AI services deployed on Azure.",
     links: [
-      { url: "https://github.com/chottosid/Shohochori-Frontend", label: "GitHub (Frontend)" },
-      { url: "https://github.com/chottosid/Shohochor_Bondhu", label: "GitHub (Backend)" },
+      { url: "https://github.com/chottosid/Cognitia-Backend", label: "GitHub (Backend)" },
+      { url: "https://github.com/chottosid/Cognitia-AI", label: "GitHub (AI)" },
     ],
-  },
-  {
-    name: "AxleCar",
-    description: "Gesture-controlled robotic vehicle using ATmega32 with gyroscope input and ESP32-CAM for wireless video streaming.",
   },
   {
     name: "Woodland Escapade",
@@ -124,38 +123,24 @@ export const projects = [
   {
     name: "Kothin Trains",
     description: "Train ticketing platform with seat selection, scheduling, and booking. Django backend with raw SQL query layer.",
+    image: "/projects/trains.jpg",
     links: [
       { url: "https://github.com/chottosid/Kothin-Trains", label: "GitHub" },
-    ],
-  },
-  {
-    name: "Network Security Toolkit",
-    description: "Packet-level network tools in C++ and Python for packet flooding and ICMP fragmentation attacks using raw sockets and Scapy.",
-    links: [
-      { url: "https://github.com/chottosid/CSE406-Project", label: "GitHub" },
-    ],
-  },
-  {
-    name: "Compiler",
-    description: "Compiler for a C-like grammar targeting 8086 assembly output, with a flex-based lexical analyzer, a Bison LALR(1) parser with semantic actions and error recovery, and a code generator with type-aware expression evaluation and scoped symbol table management.",
-    links: [
-      { url: "https://github.com/chottosid/CSE-310---Compiler-Sessional", label: "GitHub" },
     ],
   },
 ];
 
 export const education = {
   institution: "Bangladesh University of Engineering and Technology (BUET)",
-  period: "Jan 2022 – Jun 2026",
+  period: "Graduated Jun 2026",
   degree: "Bachelor of Science in Computer Science and Engineering",
-  coursework: "Algorithms, Data Structures, Graph Theory, Machine Learning, Artificial Intelligence, Operating Systems, Compilers",
 };
 
 export const awards = [
   { title: "Silver Medalist, International Blockchain Olympiad", year: "2025", highlight: true },
   { title: "Honorable Mention, Asia Pacific Mathematical Olympiad (APMO)", year: "2019", highlight: true },
-  { title: "International Mathematical Olympiad (IMO) Training Camp", year: "2016–2020", highlight: true },
-  { title: "Sir Fazle Hasan Abed Scholar, BRAC University", year: "2021" },
+  { title: "International Mathematical Olympiad (IMO) Extended Camp and National Camp", year: "2016–2020", highlight: true },
+  { title: "Sir Fazle Hasan Abed Scholar, BRAC University", year: "2020" },
   { title: "Academic Team Member, Bangladesh Mathematical Olympiad", year: "2022–Present", highlight: true },
   { title: "Global Top 100, Reply AI Agents Challenge (out of 2000+ teams)", year: "2026" },
   { title: "Finalist, Innovation World Cup", year: "2025" },
@@ -167,13 +152,9 @@ export const awards = [
 ];
 
 export const skills = [
-  { category: "ML & AI", items: "PyTorch, Transformers, Computer Vision, NLP, Generative Modeling" },
-  { category: "Data & Scientific Computing", items: "Pandas, SciPy" },
-  { category: "Agentic & LLM", items: "LangChain, LangGraph" },
-  { category: "Programming", items: "Python, C, C++, Java, JavaScript" },
-  { category: "Backend & Systems", items: "FastAPI, Django, Node.js, Spring Boot" },
-  { category: "Databases & Infra", items: "PostgreSQL, MongoDB, Redis, Docker, NGINX" },
-  { category: "Frontend", items: "React.js, Next.js" },
-  { category: "Web Scraping & Automation", items: "Selenium, BeautifulSoup, Playwright" },
+  { category: "ML & AI", items: "PyTorch, Transformers, Computer Vision, NLP, Generative Modeling, Pandas, SciPy" },
+  { category: "Agentic, LLM & Automation", items: "LangChain, LangGraph, Selenium, Playwright, BeautifulSoup" },
+  { category: "Programming & Frontend", items: "Python, C, C++, Java, JavaScript, React.js, Next.js" },
+  { category: "Backend & Infra", items: "FastAPI, Django, Node.js, Spring Boot, PostgreSQL, MongoDB, Redis, Docker, NGINX" },
   { category: "Blockchain & Web3", items: "Solidity, Ethereum, Smart Contracts, Hardhat, Ethers.js" },
 ];

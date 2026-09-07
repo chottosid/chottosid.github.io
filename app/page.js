@@ -19,6 +19,13 @@ function ExternalLink({ href, children }) {
   );
 }
 
+const STATUS_LABELS = {
+  accepted: "Accepted",
+  published: "Published",
+  "in-progress": "In Progress",
+  "under-review": "Under Review",
+};
+
 export default function Home() {
   return (
     <main className="bg-white dark:bg-ink-900 min-h-screen">
@@ -65,7 +72,7 @@ export default function Home() {
                 <div className="flex items-start justify-between gap-2">
                   <h3 className="font-serif font-semibold text-ink-800 dark:text-ink-100">{item.title}</h3>
                   <span className={`status-badge ${item.status}`}>
-                    {item.status === "in-progress" ? "In Progress" : item.status.charAt(0).toUpperCase() + item.status.slice(1)}
+                    {STATUS_LABELS[item.status]}
                   </span>
                 </div>
                 {item.collaborators && (
@@ -130,6 +137,14 @@ export default function Home() {
                   )}
                 </div>
                 <p className="text-sm text-ink-500 dark:text-ink-400">{project.description}</p>
+                {project.image && (
+                  <img
+                    src={project.image}
+                    alt={`${project.name} screenshot`}
+                    loading="lazy"
+                    className="mt-2 rounded-md border border-ink-100 dark:border-ink-700 w-full"
+                  />
+                )}
                 {project.links && (
                   <div className="flex gap-3 mt-1 text-sm">
                     {project.links.map((link) => (
@@ -151,9 +166,6 @@ export default function Home() {
               <span className="text-sm text-ink-400 dark:text-ink-500 whitespace-nowrap">{education.period}</span>
             </div>
             <p className="text-sm text-ink-500 dark:text-ink-400">{education.degree}</p>
-            <p className="text-sm text-ink-400 dark:text-ink-500 mt-1">
-              Relevant Coursework: {education.coursework}
-            </p>
           </div>
         </section>
 
