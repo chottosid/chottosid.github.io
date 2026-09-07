@@ -137,14 +137,6 @@ export default function Home() {
                   )}
                 </div>
                 <p className="text-sm text-ink-500 dark:text-ink-400">{project.description}</p>
-                {project.image && (
-                  <img
-                    src={project.image}
-                    alt={`${project.name} screenshot`}
-                    loading="lazy"
-                    className="mt-2 rounded-md border border-ink-100 dark:border-ink-700 w-full"
-                  />
-                )}
                 {project.links && (
                   <div className="flex gap-3 mt-1 text-sm">
                     {project.links.map((link) => (

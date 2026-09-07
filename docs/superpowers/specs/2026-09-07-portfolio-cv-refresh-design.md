@@ -19,6 +19,8 @@ portfolio, not a CV copy.
    `project.image` exists. Woodland Escapade gets **no** image: its README screenshots show the old
    2D IGraphics "bounce" scaffolding, which contradicts the FPS description — stale until fresh
    gameplay screenshots exist. Demo videos stay links, not embeds.
+   *(Update, same day: user opted to remove the Veritas/Kothin Trains images after seeing them live —
+   project cards are text-only; the `<img>` render block and `public/projects/` were deleted.)*
 5. **Education:** "Graduated Jun 2026" wording; coursework line dropped. CGPA stays out
    (deliberately removed in 9f45b16).
 6. **Awards:** IMO entry → "Extended Camp and National Camp"; Sir Fazle Hasan Abed Scholar → 2020.

@@ -25,7 +25,7 @@ export const profile = {
 export const research = [
   {
     title: "DDS-E-Sim: A Transformer-based Probabilistic Generative Framework for Simulating Error-Prone DNA Sequences for DNA Data Storage",
-    status: "accepted",
+    status: "published",
     collaborators: "with Prof. A.B.M. Alim Al Islam, BUET",
     venue: "NeurIPS 2025 Workshops (FPI & SPIGM)",
     link: {
@@ -83,7 +83,6 @@ export const projects = [
     name: "Veritas",
     badge: "IBCOL 2025 Silver Medal",
     description: "Blockchain and AI-powered digital justice platform with public blockchain audit trails, IPFS evidence storage, and Solidity smart contracts.",
-    image: "/projects/veritas.png",
     links: [
       { url: "https://github.com/chottosid/Veritas", label: "GitHub" },
       { url: "https://www.youtube.com/watch?v=7kOzdRZQUZQ", label: "Demo" },
@@ -123,7 +122,6 @@ export const projects = [
   {
     name: "Kothin Trains",
     description: "Train ticketing platform with seat selection, scheduling, and booking. Django backend with raw SQL query layer.",
-    image: "/projects/trains.jpg",
     links: [
       { url: "https://github.com/chottosid/Kothin-Trains", label: "GitHub" },
     ],
