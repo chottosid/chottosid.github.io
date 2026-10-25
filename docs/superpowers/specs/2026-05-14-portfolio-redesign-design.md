@@ -5,7 +5,7 @@
 
 ## Goal
 
-Redesign swarupsidhartho.xyz as a clean, minimal, professional academic portfolio that works equally well for grad school admissions committees and tech recruiters. Replace all placeholder content with real data from the user's CV.
+Redesign swarupsidhartho.com as a clean, minimal, professional academic portfolio that works equally well for grad school admissions committees and tech recruiters. Replace all placeholder content with real data from the user's CV.
 
 ## Design Direction
 

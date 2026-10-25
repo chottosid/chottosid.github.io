@@ -13,7 +13,7 @@ export const profile = {
   email: "swarupsidhartho@gmail.com",
   github: "https://github.com/chottosid",
   linkedin: "https://www.linkedin.com/in/swarup-sidhartho-mondol-032b90257/",
-  website: "https://swarupsidhartho.xyz",
+  website: "https://swarupsidhartho.com",
   summary: [
     "Hi, thanks for stopping by to check out my profile. To your possible disappointment, this is little more than a poorly maintained extension of my CV — apologies 🥹",
     "I am Swarup Sidhartho Mondol. I graduated from Bangladesh University of Engineering and Technology in 2026 with a major in CSE. My current interests lie in Mathematics, Algorithms, Machine Learning, and Multi-Agent Systems. Being trained as an engineer, I also enjoy building things, mostly backends and AI/ML powered pipelines.",

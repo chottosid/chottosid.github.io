@@ -1,4 +1,5 @@
 import "./globals.css";
+import { profile } from "./data";
 
 export const metadata = {
   title: "Swarup Sidhartho Mondol | Software Engineer & Researcher",
@@ -8,7 +9,7 @@ export const metadata = {
     "Swarup Sidhartho Mondol, BUET CSE, software engineer, blockchain developer, machine learning, NeurIPS, International Blockchain Olympiad, full-stack developer, Bangladesh, Web3, Solidity, Next.js, Python",
   authors: [{ name: "Swarup Sidhartho Mondol" }],
   creator: "Swarup Sidhartho Mondol",
-  metadataBase: new URL("https://swarupsidhartho.xyz"),
+  metadataBase: new URL(profile.website),
   alternates: {
     canonical: "/",
   },
@@ -16,7 +17,7 @@ export const metadata = {
     title: "Swarup Sidhartho Mondol | Software Engineer & Researcher",
     description:
       "Software Engineer and CSE graduate of BUET building backend systems, AI-powered applications, and multi-agent pipelines. Silver Medalist at International Blockchain Olympiad 2025.",
-    url: "https://swarupsidhartho.xyz",
+    url: profile.website,
     siteName: "Swarup Sidhartho Mondol",
     locale: "en_US",
     type: "website",
@@ -51,8 +52,8 @@ const jsonLd = {
   "@context": "https://schema.org",
   "@type": "Person",
   name: "Swarup Sidhartho Mondol",
-  url: "https://swarupsidhartho.xyz",
-  image: "https://swarupsidhartho.xyz/portrait.jpg",
+  url: profile.website,
+  image: `${profile.website}/portrait.jpg`,
   jobTitle: "Software Engineer & Researcher",
   worksFor: {
     "@type": "EducationalOrganization",
