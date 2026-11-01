@@ -46,6 +46,7 @@ export const research = [
     title: "DMOTE: Dimensionality-Driven Minority Oversampling Techniques for Imbalanced Learning",
     status: "under-review",
     collaborators: "with Prof. Sukarna Barua, BUET",
+    venue: "AAAI 2027",
     description: "Novel dimensionality-driven oversampling method leveraging dimensional geometry for minority class synthesis under class imbalance.",
   },
   {
