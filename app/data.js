@@ -136,6 +136,7 @@ export const education = {
 };
 
 export const awards = [
+  { title: "First Runner-up, Nascenia AI Hackathon", year: "2026" },
   { title: "Silver Medalist, International Blockchain Olympiad", year: "2025", highlight: true },
   { title: "Honorable Mention, Asia Pacific Mathematical Olympiad (APMO)", year: "2019", highlight: true },
   { title: "International Mathematical Olympiad (IMO) Extended Camp and National Camp", year: "2016–2020", highlight: true },
